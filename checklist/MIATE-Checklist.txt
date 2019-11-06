@@ -1,0 +1,67 @@
+ISA Section	Label	Class	Datatype	Ontology source	In vivo	In vitro	Ex vivo
+Investigation							
+Study Description							
+	Study Identifier		Unique ID		X	X	X
+	Study Title		String		X	X	X
+	Study Description		String		X	X	X
+	Study Grant Number		String		X	X	X
+	Study Funding Agency		String		X	X	X
+Study Design Descriptors							
+	Study Design Type		Ontology	EFO	X	X	X
+Study Publications							
+	Pubmed ID		string		X	X	X
+	Publication DOI		string		X	X	X
+	Author list		string		X	X	X
+	Publication title		string		X	X	X
+	Publication status		string		X	X	X
+Study Contacts							
+	Last name		string		X	X	X
+	First name		string		X	X	X
+	Middle Initials		string		X	X	X
+	Email		string		X	X	X
+	Phone		string		X	X	X
+	Fax		string		X	X	X
+	Address		string		X	X	X
+	Affiliation		string		X	X	X
+	Role		string		X	X	X
+	ORCID		string		X	X	X
+Study							
+Animal Details							
+	Organism	Characteristic	Ontology	NCBI Taxonomy	X	X	X
+	Strain	Characteristic	Ontology	Rat Strain Ontology (RS); EFO	X		X
+	Cell line	Characteristic	Ontology	Cell Culture Ontology (CCONT)		X	
+	Sex	Characteristic	Ontology	EFO	X		X
+	Study start age	Parameter	Number		X		X
+	Study end age	Parameter	Number		X		X
+	Age Unit	Characteristic	Ontology	EFO	X		X
+Housing conditions							
+	Average Vivarium Temperature	Parameter	Number		X		X
+	Temperature Unit	Characteristic	Ontology	EFO	X		X
+	Average Vivarium Humidity	Parameter	Number		X		X
+	Humidity Unit	Characteristic	Ontology	EFO	X		X
+	Vivarium Light Cycle	Parameter	String		X		X
+	Cage Type	Parameter	String		X		X
+	Bedding Type	Parameter	String		X		X
+	Water Type	Parameter	String		X		X
+	Feed Type	Parameter	String; Attachment		X		X
+Exposure							
+	Toxic Substance	Characteristic	Ontology	CHEBI	X	X	X
+	Vehicle Substance	Characteristic	Ontology	CHEBI	X	X	X
+	Administration Interval	Parameter	Number		X	X	X
+	Administration Interval Unit	Characteristic	Ontology	EFO	X	X	X
+	Number of Administrations	Parameter	Number		X	X	X
+	Administration Route	Parameter	String		X	X	X
+	Dose	Factor	Number		X	X (concentration)	X
+	Dose Unit	Characteristic	Ontology	EFO	X	X (concentration)	X
+	Time-point	Factor	Number		X	X	X
+	Time-point Unit	Characteristic	Ontology	EFO	X	X	X
+	Chemical Source	Parameter	String		X	X	X
+	Chemical Catalog Number	Parameter	String		X	X	X
+	Chemical Purity	Parameter	String; Attachment		X	X	X
+Cell Culture Conditions (in progress)							
+	Incubation temperature					X	X
+	Gas composition					X	X
+	Humidity					X	X
+	Humidity Unit					X	X
+	Culture dish type					X	X
+	…						

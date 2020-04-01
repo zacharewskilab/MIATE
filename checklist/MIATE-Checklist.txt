@@ -50,7 +50,7 @@ Diet exposure
 	Feed catalog number	Parameter	String		Catalog number of the feed if commercially available.			
 Toxic substance exposure								
 	Toxic Substance Name	Factor	String		Descriptive name of the toxic substance or mixture			
-	Toxic Substance	Characteristic	Ontology	CHEBI	CHEBI identifier(s) of the toxic substance. For a list of substances in a mixture use a semi-colon (;) between identifier.	X	X	X
+	Toxic Substance	Characteristic	Ontology	CHEBI; FOODON	Identifier(s) of the toxic substance. For a list of substances in a mixture use a semi-colon (;) between identifier.	X	X	X
 	Vehicle Substance	Characteristic	Ontology	CHEBI	Name of the vehicle compound used to deliver the toxic substance or mixture.	X	X	X
 	Administration Interval	Parameter	Number		Amount of time between subsequent doses when multiple doses are administered over a period of time.	X	X	X
 	Administration Interval Unit	Characteristic	Ontology	EFO	Unit for the amount of time between subsequent doses when multiple doses are administered over a period of time. Must be one of the following: SECONDS,MINUTES,HOURS,DAYS,WEEKS,MONTHS,YEARS	X	X	X

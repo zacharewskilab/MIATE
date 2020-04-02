@@ -1,306 +1,101 @@
-<isatab-config-file xmlns="http://www.ebi.ac.uk/bii/isatab_configuration#">
-	<isatab-configuration table-name="studySample">
-		<measurement term-label="[Sample]" term-accession="" source-abbreviation=""/>
-		<technology term-label="" term-accession="" source-abbreviation=""/>
-		<field header="Source Name" data-type="String" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Sources are considered as the starting biological material used in a study.]]>
-			</description>
-			<default-value>
-				<![CDATA[]]>
-			</default-value>
-		</field>
-		<field header="Characteristics[organism]" data-type="Ontology term" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="true">
-			<description>
-				<![CDATA[Provide a taxonomic information associated to the source biological material. This should be included as an NCBI TaxID unless not found within NCBI]]>
-			</description>
-			<default-value/>
-			<recommended-ontologies>
-				<ontology id="http://data.bioontology.org/ontologies/NCBITAXON" abbreviation="NCBITAXON" name="National Center for Biotechnology Information (NCBI) Organismal Classification" version="2"/>
-			</recommended-ontologies>
-		</field>
-		<field header="Characteristics[strain]" data-type="Ontology term" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="true">
-			<description>
-				<![CDATA[Provide strain information associated to the source biological material. This should be included using an ontology to ensure consistency in nomenclature]]>
-			</description>
-			<default-value/>
-		</field>
-		<field header="Characteristics[age unit]" data-type="List" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Unit used to calculate animal age during the study]]>
-			</description>
-			<default-value>
-				<![CDATA[
+<isatab-config-file xmlns="http://www.ebi.ac.uk/bii/isatab_configuration#"><isatab-configuration table-name="studySample"><measurement term-label="[Sample]" term-accession="" source-abbreviation=""/><technology term-label="" term-accession="" source-abbreviation=""/><field header="Source Name" data-type="String" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Sources are considered as the starting biological material used in a study.]]></description><default-value><![CDATA[
 				
-			]]>
-			</default-value>
-			<list-values>HOURS,DAYS,WEEKS,MONTHS,YEARS,DEVELOPMENTAL STAGE</list-values>
-		</field>
-		<field header="Characteristics[temperature unit]" data-type="List" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Unit used to measure average vivarium temperature either as celsius (C) or fahrenheit (F).]]>
-			</description>
-			<default-value>
-				<![CDATA[
+			]]></default-value></field><field header="Characteristics[organism]" data-type="Ontology term" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="true"><description><![CDATA[Provide a taxonomic information associated to the source biological material. This should be included as an NCBI TaxID unless not found within NCBI]]></description><default-value></default-value><recommended-ontologies><ontology id="http://data.bioontology.org/ontologies/NCBITAXON" abbreviation="NCBITAXON" name="National Center for Biotechnology Information (NCBI) Organismal Classification" version="2"/></recommended-ontologies></field><field header="Characteristics[strain]" data-type="Ontology term" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="true"><description><![CDATA[Provide strain information associated to the source biological material. This should be included using an ontology to ensure consistency in nomenclature]]></description><default-value></default-value></field><field header="Characteristics[age unit]" data-type="List" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Unit used to calculate animal age during the study]]></description><default-value><![CDATA[
 				
-			]]>
-			</default-value>
-			<list-values>CELSIUS,FAHRENHEIT</list-values>
-		</field>
-		<field header="Characteristics[humidity unit]" data-type="List" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Unit used to measure average vivarium humidity either as absolute (g/m^2), relative (%), or specific (g/kg).]]>
-			</description>
-			<default-value>
-				<![CDATA[
 				
-			]]>
-			</default-value>
-			<list-values>PERCENT,g/kg,g/m^2</list-values>
-		</field>
-		<field header="Characteristics[admin interval unit]" data-type="List" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Unit for the amount of time between subsequent doses when multiple doses are administered over a period of time.]]>
-			</description>
-			<default-value>
-				<![CDATA[
+			
+			]]></default-value><list-values>HOURS,DAYS,WEEKS,MONTHS,YEARS,DEVELOPMENTAL STAGE</list-values></field><field header="Characteristics[temperature unit]" data-type="List" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Unit used to measure average vivarium temperature either as celsius (C) or fahrenheit (F).]]></description><default-value><![CDATA[
 				
-			]]>
-			</default-value>
-			<list-values>SECONDS,MINUTES,HOURS,DAYS,WEEKS,MONTHS,YEARS</list-values>
-		</field>
-		<field header="Characteristics[dose unit]" data-type="List" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Unit describing toxicant dose administered.]]>
-			</description>
-			<default-value>
-				<![CDATA[
 				
-			]]>
-			</default-value>
-			<list-values>pg/kg,ng/kg,ug/kg,mg/kg,g/kg</list-values>
-		</field>
-		<field header="Characteristics[time point unit]" data-type="List" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Unit describing time post administation of dose and when samples were collected]]>
-			</description>
-			<default-value>
-				<![CDATA[
+			
+			]]></default-value><list-values>CELSIUS,FAHRENHEIT</list-values></field><field header="Characteristics[humidity unit]" data-type="List" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Unit used to measure average vivarium humidity either as absolute (g/m^2), relative (%), or specific (g/kg).]]></description><default-value><![CDATA[
 				
-			]]>
-			</default-value>
-			<list-values>SECONDS,MINUTES,HOURS,DAYS,WEEKS,MONTHS,YEARS</list-values>
-		</field>
-		<protocol-field protocol-type ="Treatment"/>
-		<field header="Parameter Value[sex]" data-type="List" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Sex of the study organism.]]>
-			</description>
-			<default-value>
-				<![CDATA[]]>
-			</default-value>
-			<list-values>FEMALE,MALE</list-values>
-		</field>
-		<field header="Parameter Value[start age]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Age of the organism at the time the first dose was administered.]]>
-			</description>
-			<default-value>
-				<![CDATA[
 				
-			]]>
-			</default-value>
-		</field>
-		<field header="Parameter Value[end age]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Age of the organism when the terminal sample was collected.]]>
-			</description>
-			<default-value>
-				<![CDATA[
+			
+			]]></default-value><list-values>PERCENT,g/kg,g/m^2</list-values></field><field header="Characteristics[admin interval unit]" data-type="List" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Unit for the amount of time between subsequent doses when multiple doses are administered over a period of time.]]></description><default-value><![CDATA[
 				
-			]]>
-			</default-value>
-		</field>
-		<field header="Parameter Value[temperature]" data-type="Double" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Average vivarium temperature during the study]]>
-			</description>
-			<default-value>
-				<![CDATA[
 				
-			]]>
-			</default-value>
-		</field>
-		<field header="Parameter Value[humidity]" data-type="Double" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Average vivarium humidity during the study]]>
-			</description>
-			<default-value>
-				<![CDATA[
+			
+			]]></default-value><list-values>SECONDS,MINUTES,HOURS,DAYS,WEEKS,MONTHS,YEARS</list-values></field><field header="Characteristics[dose unit]" data-type="List" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Unit describing toxicant dose administered.]]></description><default-value><![CDATA[
 				
-			]]>
-			</default-value>
-		</field>
-		<field header="Parameter Value[light cycle]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Vivarium light cycle for the study period defined as light:dark formattet as number:number (e.g. 12:12, 03:21, ...)]]>
-			</description>
-			<default-value>
-				<![CDATA[
 				
-			]]>
-			</default-value>
-		</field>
-		<field header="Parameter Value[cage]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Define the type of caging used for the study period]]>
-			</description>
-			<default-value>
-				<![CDATA[
+			
+			]]></default-value><list-values>pg/kg,ng/kg,ug/kg,mg/kg,g/kg</list-values></field><field header="Characteristics[time point unit]" data-type="List" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Unit describing time post administation of dose and when samples were collected]]></description><default-value><![CDATA[
 				
-			]]>
-			</default-value>
-		</field>
-		<field header="Parameter Value[bedding]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Define the type of bedding used for the study period]]>
-			</description>
-			<default-value>
-				<![CDATA[
 				
-			]]>
-			</default-value>
-		</field>
-		<field header="Parameter Value[water]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Define the water source for the study period]]>
-			</description>
-			<default-value>
-				<![CDATA[
+			
+			]]></default-value><list-values>SECONDS,MINUTES,HOURS,DAYS,WEEKS,MONTHS,YEARS</list-values></field><protocol-field protocol-type ="Treatment"/><field header="Parameter Value[sex]" data-type="List" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Sex of the study organism.]]></description><default-value><![CDATA[
 				
-			]]>
-			</default-value>
-		</field>
-		<field header="Parameter Value[feed]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Provide the catalog number and vendor for the feed used during the study.]]>
-			</description>
-			<default-value>
-				<![CDATA[
+			]]></default-value><list-values>FEMALE,MALE</list-values></field><field header="Parameter Value[start age]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Age of the organism at the time the first dose was administered.]]></description><default-value><![CDATA[
 				
-			]]>
-			</default-value>
-		</field>
-		<field header="Parameter Value[toxic substance]" data-type="Ontology term" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[The name of the toxicant tested.]]>
-			</description>
-			<default-value/>
-			<recommended-ontologies>
-				<ontology id="http://data.bioontology.org/ontologies/CHEBI" abbreviation="CHEBI" name="Chemical Entities of Biological Interest Ontology" version="80"/>
-			</recommended-ontologies>
-		</field>
-		<field header="Parameter Value[vehicle substance]" data-type="Ontology term" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[The name of the vehicle compound used to deliver the toxicant.]]>
-			</description>
-			<default-value/>
-			<recommended-ontologies>
-				<ontology id="http://data.bioontology.org/ontologies/CHEBI" abbreviation="CHEBI" name="Chemical Entities of Biological Interest Ontology" version="80"/>
-			</recommended-ontologies>
-		</field>
-		<field header="Parameter Value[admin interval]" data-type="Double" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Amount of time between subsequent doses when multiple doses are administered over a period of time.]]>
-			</description>
-			<default-value>
-				<![CDATA[
 				
-			]]>
-			</default-value>
-		</field>
-		<field header="Parameter Value[admin number]" data-type="Integer" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[The number of doses administered when multiple doses are given over a period of time.]]>
-			</description>
-			<default-value>
-				<![CDATA[
+			
+			]]></default-value></field><field header="Parameter Value[end age]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Age of the organism when the terminal sample was collected.]]></description><default-value><![CDATA[
 				
-			]]>
-			</default-value>
-		</field>
-		<field header="Parameter Value[admin route]" data-type="List" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[The delivery mechanism for the toxicant tested.]]>
-			</description>
-			<default-value>
-				<![CDATA[
 				
-			]]>
-			</default-value>
-			<list-values>GAVAGE,INTRAPERITONEAL,RETRO-ORBITAL,TAIL VEIN INJECTION,DIET,WATER,DOUGH PILL</list-values>
-		</field>
-		<field header="Parameter Value[chemical cat no]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Catalog number of the toxicant.]]>
-			</description>
-			<default-value>
-				<![CDATA[
+			
+			]]></default-value></field><field header="Parameter Value[temperature]" data-type="Double" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Average vivarium temperature during the study]]></description><default-value><![CDATA[
 				
-			]]>
-			</default-value>
-		</field>
-		<field header="Parameter Value[chemical vendor]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Vendor of the toxicant tested]]>
-			</description>
-			<default-value>
-				<![CDATA[
 				
-			]]>
-			</default-value>
-		</field>
-		<field header="Parameter Value[purity]" data-type="String" is-file-field="true" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Chemical purity of the toxicant. A sample information sheet from the vendor can be attached.]]>
-			</description>
-			<default-value>
-				<![CDATA[
+			
+			]]></default-value></field><field header="Parameter Value[humidity]" data-type="Double" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Average vivarium humidity during the study]]></description><default-value><![CDATA[
 				
-			]]>
-			</default-value>
-		</field>
-		<field header="Factor Value[dose]" data-type="Double" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Dose of the toxicant]]>
-			</description>
-			<default-value>
-				<![CDATA[
 				
-			]]>
-			</default-value>
-		</field>
-		<field header="Factor Value[time point]" data-type="Double" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Time point at which the sample was collected.]]>
-			</description>
-			<default-value>
-				<![CDATA[
+			
+			]]></default-value></field><field header="Parameter Value[light cycle]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Vivarium light cycle for the study period defined as light:dark formattet as number:number (e.g. 12:12, 03:21, ...)]]></description><default-value><![CDATA[
 				
-			]]>
-			</default-value>
-		</field>
-		<field header="Sample Name" data-type="String" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
-			<description>
-				<![CDATA[Samples represent major outputs resulting from a protocol application other than the special case outputs of Extract or a Labeled Extract.]]>
-			</description>
-			<default-value>
-				<![CDATA[
 				
-			]]>
-			</default-value>
-		</field>
-		<structured-field name="characteristics"/>
-		<structured-field name="factors"/>
-	</isatab-configuration>
-</isatab-config-file>
+			
+			]]></default-value></field><field header="Parameter Value[cage]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Define the type of caging used for the study period]]></description><default-value><![CDATA[
+				
+				
+			
+			]]></default-value></field><field header="Parameter Value[bedding]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Define the type of bedding used for the study period]]></description><default-value><![CDATA[
+				
+				
+			
+			]]></default-value></field><field header="Parameter Value[water]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Define the water source for the study period]]></description><default-value><![CDATA[
+				
+				
+			
+			]]></default-value></field><field header="Parameter Value[feed]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Provide the catalog number and vendor for the feed used during the study.]]></description><default-value><![CDATA[
+				
+				
+			
+			]]></default-value></field><field header="Parameter Value[toxic substance]" data-type="Ontology term" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false"><description><![CDATA[The name of the toxicant tested.]]></description><default-value></default-value><recommended-ontologies><ontology id="http://data.bioontology.org/ontologies/CHEBI" abbreviation="CHEBI" name="Chemical Entities of Biological Interest Ontology" version="80"/></recommended-ontologies></field><field header="Parameter Value[vehicle substance]" data-type="Ontology term" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false"><description><![CDATA[The name of the vehicle compound used to deliver the toxicant.]]></description><default-value></default-value><recommended-ontologies><ontology id="http://data.bioontology.org/ontologies/CHEBI" abbreviation="CHEBI" name="Chemical Entities of Biological Interest Ontology" version="80"/></recommended-ontologies></field><field header="Parameter Value[admin interval]" data-type="Double" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Amount of time between subsequent doses when multiple doses are administered over a period of time.]]></description><default-value><![CDATA[
+				
+				
+			
+			]]></default-value></field><field header="Parameter Value[admin number]" data-type="Integer" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false"><description><![CDATA[The number of doses administered when multiple doses are given over a period of time.]]></description><default-value><![CDATA[
+				
+				
+			
+			]]></default-value></field><field header="Parameter Value[admin route]" data-type="List" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false"><description><![CDATA[The delivery mechanism for the toxicant tested.]]></description><default-value><![CDATA[
+				
+				
+			
+			]]></default-value><list-values>GAVAGE,INTRAPERITONEAL,RETRO-ORBITAL,TAIL VEIN INJECTION,DIET,WATER,DOUGH PILL</list-values></field><field header="Parameter Value[chemical cat no]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Catalog number of the toxicant.]]></description><default-value><![CDATA[
+				
+				
+			
+			]]></default-value></field><field header="Parameter Value[chemical vendor]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Vendor of the toxicant tested]]></description><default-value><![CDATA[
+				
+				
+			
+			]]></default-value></field><field header="Parameter Value[purity]" data-type="String" is-file-field="true" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Chemical purity of the toxicant. A sample information sheet from the vendor can be attached.]]></description><default-value><![CDATA[
+				
+				
+			
+			]]></default-value></field><field header="Factor Value[dose]" data-type="Double" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Dose of the toxicant]]></description><default-value><![CDATA[
+				
+				
+			
+			]]></default-value></field><field header="Factor Value[time point]" data-type="Double" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Time point at which the sample was collected.]]></description><default-value><![CDATA[
+				
+				
+			
+			]]></default-value></field><field header="Sample Name" data-type="String" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false"><description><![CDATA[Samples represent major outputs resulting from a protocol application other than the special case outputs of Extract or a Labeled Extract.]]></description><default-value><![CDATA[
+				
+				
+			
+			]]></default-value></field><structured-field name="characteristics"/><structured-field name="factors"/></isatab-configuration></isatab-config-file>

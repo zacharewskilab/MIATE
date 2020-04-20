@@ -1,73 +1,70 @@
-ISA Section	Label	Class	Datatype	Ontology source	Description	In vivo	In vitro	Ex vivo
-Investigation								
-Study Description								
-	Study Identifier		Unique ID			X	X	X
-	Study Title		String			X	X	X
-	Study Description		String			X	X	X
-	Study Grant Number		String			X	X	X
-	Study Funding Agency		String			X	X	X
-Study Design Descriptors								
-	Study Design Type		Ontology	EFO		X	X	X
-Study Publications								
-	Pubmed ID		string			X	X	X
-	Publication DOI		string			X	X	X
-	Author list		string			X	X	X
-	Publication title		string			X	X	X
-	Publication status		string			X	X	X
-Study Contacts								
-	Last name		string			X	X	X
-	First name		string			X	X	X
-	Middle Initials		string			X	X	X
-	Email		string			X	X	X
-	Phone		string			X	X	X
-	Fax		string			X	X	X
-	Address		string			X	X	X
-	Affiliation		string			X	X	X
-	Role		string			X	X	X
-	ORCID		string			X	X	X
-Study								
-Animal details								
-	Organism	Characteristic	Ontology	NCBI Taxonomy	Provide taxonomic information associated to the source biological material. This should be included as an NCBI_TAXON ID unless not found within NCBI.	X	X	X
-	Strain	Characteristic	Ontology	Rat Strain Ontology (RS); EFO	Provide strain information associated to the source biological material.	X		X
-	Cell line	Characteristic	Ontology	Cell Culture Ontology (CCONT)			X	
-	Sex	Characteristic	Ontology	EFO	Sex of the study organism. Must be one of the following: FEMALE, MALE	X		X
-	Study start age	Parameter	Number		Age of the organism at the time the first dose was administered.	X		X
-	Study end age	Parameter	Number		Age of the organism when the terminal sample was collected.	X		X
-	Age Unit	Characteristic	Ontology	EFO	Unit used to calculate animal age during the study. Must be one of the following: HOURS,DAYS,WEEKS,MONTHS,YEARS,DEVELOPMENTAL STAGE	X		X
-Housing conditions								
-	Average Vivarium Temperature	Parameter	Number		Average vivarium temperature during the study	X		X
-	Temperature Unit	Characteristic	Ontology	EFO	Unit used to measure average vivarium temperature. Must be one of the following: CELSIUS,FAHRENHEIT	X		X
-	Average Vivarium Humidity	Parameter	Number		Average vivarium humidity during the study	X		X
-	Humidity Unit	Characteristic	Ontology	EFO	Unit used to measure average vivarium humidity. Must be one of the following: PERCENT,g/kg,g/m^2	X		X
-	Vivarium Light Cycle	Parameter	String		Vivarium light cycle for the study period defined as light:dark formatted as number:number (e.g. 12:12, 03:21, ...)	X		X
-	Cage Type	Parameter	String		Define the type of caging used for the study period	X		X
-	Bedding Type	Parameter	String		Define the type of bedding used for the study period	X		X
-	Water Type	Parameter	String		Define the water source for the study period	X		X
-Diet exposure								
-	Feed Name	Factor	String		Descriptive name of the diet	X		X
-	Feed description	Parameter	String		Description of feed including, but not limited to, macronutrient composition	X		X
-	Feed source	Parameter	String		Vendor of the feed tested if commercially available	X		X
-	Feed catalog number	Parameter	String		Catalog number of the feed if commercially available.			
-Toxic substance exposure								
-	Toxic Substance Name	Factor	String		Descriptive name of the toxic substance or mixture			
-	Toxic Substance	Characteristic	Ontology	CHEBI; FOODON	Identifier(s) of the toxic substance. For a list of substances in a mixture use a semi-colon (;) between identifier.	X	X	X
-	Vehicle Substance	Characteristic	Ontology	CHEBI	Name of the vehicle compound used to deliver the toxic substance or mixture.	X	X	X
-	Administration Interval	Parameter	Number		Amount of time between subsequent doses when multiple doses are administered over a period of time.	X	X	X
-	Administration Interval Unit	Characteristic	Ontology	EFO	Unit for the amount of time between subsequent doses when multiple doses are administered over a period of time. Must be one of the following: SECONDS,MINUTES,HOURS,DAYS,WEEKS,MONTHS,YEARS	X	X	X
-	Number of Administrations	Parameter	Number		The number of doses administered when multiple doses are given over a period of time.	X	X	X
-	Administration Route	Parameter	String		The delivery mechanism for the toxicant tested. Must be one of the following: GAVAGE,INTRAPERITONEAL,RETRO-ORBITAL,TAIL VEIN INJECTION,DIET,WATER,DOUGH PILL	X	X	X
-	Dose	Factor	Number		Dose of the toxic substance	X	X (concentration)	X
-	Dose Unit	Characteristic	Ontology	EFO	Unit describing toxicant dose administered. Must be one of the following: pg/kg,ng/kg,ug/kg,mg/kg,g/kg	X	X (concentration)	X
-	Chemical Source	Parameter	String		Vendor of the toxic substance tested if commercially available	X	X	X
-	Chemical Catalog Number	Parameter	String		Catalog number of the toxicant if commercially available.	X	X	X
-	Chemical Purity	Parameter	String; Attachment		Chemical purity of the toxic substance. A sample information sheet from the vendor can be attached.	X	X	X
-Exposure details								
-	Time-point	Factor	Number		Terminal time-point.	X	X	X
-	Time-point Unit	Characteristic	Ontology	EFO	Unit describing time post administation of dose when samples were collected. Must be one of the following: SECONDS,MINUTES,HOURS,DAYS,WEEKS,MONTHS,YEARS	X	X	X
-Cell Culture Conditions (in progress)								
-	Incubation temperature						X	X
-	Gas composition						X	X
-	Humidity						X	X
-	Humidity Unit						X	X
-	Culture dish type						X	X
-	…							
+ISA Section	Label	Class	Datatype	Ontology source	has units (ontology)	Description	In vivo	In vitro	Ex vivo
+Investigation									
+Study Description									
+	Study Identifier		Unique ID				X	X	X
+	Study Title		String				X	X	X
+	Study Description		String				X	X	X
+	Study Grant Number		String				X	X	X
+	Study Funding Agency		String				X	X	X
+Study Design Descriptors									
+	Study Design Type		Ontology	EFO			X	X	X
+Study Publications									
+	Pubmed ID		string				X	X	X
+	Publication DOI		string				X	X	X
+	Author list		string				X	X	X
+	Publication title		string				X	X	X
+	Publication status		string				X	X	X
+Study Contacts									
+	Last name		string				X	X	X
+	First name		string				X	X	X
+	Middle Initials		string				X	X	X
+	Email		string				X	X	X
+	Phone		string				X	X	X
+	Fax		string				X	X	X
+	Address		string				X	X	X
+	Affiliation		string				X	X	X
+	Role		string				X	X	X
+	ORCID		string				X	X	X
+Study									
+Animal details									
+	Organism	Characteristic	Ontology	NCBI Taxonomy		Provide taxonomic information associated to the source biological material. This should be included as an NCBI_TAXON ID unless not found within NCBI.	X	X	X
+	Strain	Characteristic	Ontology	Rat Strain Ontology (RS); EFO		Provide strain information associated to the source biological material.	X		X
+	Cell line	Characteristic	Ontology	Cell Culture Ontology (CCONT)				X	
+	Sex	Characteristic	Ontology	EFO		"Sex of the study organism. Must be one of the following: FEMALE, MALE"	X		X
+	Study start age	Parameter	Number		Y (EFO)	Age of the organism at the time the first dose was administered.	X		X
+	Study end age	Parameter	Number		Y (EFO)	Age of the organism when the terminal sample was collected.	X		X
+Housing conditions									
+	Average Vivarium Temperature	Parameter	Number		Y (EFO)	Average vivarium temperature during the study	X		X
+	Average Vivarium Humidity	Parameter	Number		Y (EFO)	Average vivarium humidity during the study	X		X
+	Vivarium Light Cycle	Parameter	String			"Vivarium light cycle for the study period defined as light:dark formatted as number:number (e.g. 12:12, 03:21, ...)"	X		X
+	Cage Type	Parameter	String			Define the type of caging used for the study period	X		X
+	Bedding Type	Parameter	String			Define the type of bedding used for the study period	X		X
+	Water Type	Parameter	String			Define the water source for the study period	X		X
+Diet exposure									
+	Feed Name	Factor	String			Descriptive name of the diet	X		X
+	Feed description	Parameter	String			"Description of feed including, but not limited to, macronutrient composition"	X		X
+	Feed source	Parameter	String			Vendor of the feed tested if commercially available	X		X
+	Feed catalog number	Parameter	String			Catalog number of the feed if commercially available.			
+Substance exposure									
+	Substance Name	Factor	String			Descriptive name of the toxic substance or mixture			
+	Substance	Characteristic	Ontology	CHEBI; FOODON		Identifier(s) of the toxic substance. For a list of substances in a mixture use a semi-colon (;) between identifier.	X	X	X
+	Vehicle Substance	Characteristic	Ontology	CHEBI		Name of the vehicle compound used to deliver the toxic substance or mixture.	X	X	X
+	Administration Interval	Parameter	Number		Y (EFO)	Amount of time between subsequent doses when multiple doses are administered over a period of time.	X	X	X
+	Number of Administrations	Parameter	Number			The number of doses administered when multiple doses are given over a period of time.	X	X	X
+	Administration Route	Parameter	String			"The delivery mechanism for the toxicant tested. Must be one of the following: GAVAGE,INTRAPERITONEAL,RETRO-ORBITAL,TAIL VEIN INJECTION,DIET,WATER,DOUGH PILL"	X	X	X
+	Dose	Factor	Number		Y (EFO)	Dose of the toxic substance	X	X (concentration)	X
+	Chemical Source	Parameter	String			Vendor of the toxic substance tested if commercially available	X	X	X
+	Chemical Catalog Number	Parameter	String			Catalog number of the toxicant if commercially available.	X	X	X
+	Chemical Purity	Parameter	String; Attachment			Chemical purity of the toxic substance. A sample information sheet from the vendor can be attached.	X	X	X
+Exposure details									
+	Time-point	Factor	Number		Y (EFO)	Terminal time-point.	X	X	X
+Termination Conditions									
+	Fasting duration	Parameter	Number		Y (EFO)	Number of hourse animals were fasted prior to euthanisation.	X		X
+	Euthanasia method	Parameter	String			Method use for euthanasia.	X		X
+Cell Culture Conditions (in progress)									
+	Incubation temperature							X	X
+	Gas composition							X	X
+	Humidity							X	X
+	Humidity Unit							X	X
+	Culture dish type							X	X
+	…								

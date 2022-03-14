@@ -7,7 +7,9 @@
 				<![CDATA[Sources are considered as the starting biological material used in a study.]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 		</field>
 		<field header="Characteristics[organism]" data-type="Ontology term" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="true">
@@ -22,12 +24,20 @@
 			</description>
 			<default-value/>
 		</field>
+		<field header="Characteristics[organism supplier]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
+			<description>
+				<![CDATA[Provide the vendor name or source of the organism and strain]]>
+			</description>
+			<default-value/>
+		</field>
 		<field header="Characteristics[sex]" data-type="List" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
 			<description>
 				<![CDATA[Sex of the study organism. Must be one of the following: FEMALE, MALE]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 			<list-values>FEMALE,MALE</list-values>
 		</field>
@@ -37,7 +47,9 @@
 				<![CDATA[Age of the organism at the time the first dose was administered.]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 		</field>
 		<field header="Parameter Value[end age]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false">
@@ -45,7 +57,9 @@
 				<![CDATA[Age of the organism when the terminal sample was collected.]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 		</field>
 		<unit-field data-type="String" is-multiple-value="false" is-required="true" is-forced-ontology="true">
@@ -57,7 +71,9 @@
 				<![CDATA[Average vivarium temperature during the study]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 		</field>
 		<unit-field data-type="String" is-multiple-value="false" is-required="false" is-forced-ontology="true">
@@ -69,7 +85,9 @@
 				<![CDATA[Average vivarium humidity during the study]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 		</field>
 		<unit-field data-type="String" is-multiple-value="false" is-required="false" is-forced-ontology="true">
@@ -81,7 +99,9 @@
 				<![CDATA[Vivarium light cycle for the study period defined as light:dark formattet as number:number (e.g. 12:12, 03:21, ...)]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 		</field>
 		<field header="Parameter Value[cage]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false">
@@ -89,7 +109,9 @@
 				<![CDATA[Define the type of caging used for the study period]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 		</field>
 		<field header="Parameter Value[bedding]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false">
@@ -97,7 +119,9 @@
 				<![CDATA[Define the type of bedding used for the study period]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 		</field>
 		<field header="Parameter Value[water]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false">
@@ -105,7 +129,9 @@
 				<![CDATA[Define the water source for the study period]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 		</field>
 		<protocol-field protocol-type ="Diet exposure"/>
@@ -114,7 +140,9 @@
 				<![CDATA[Description of feed including, but not limited to, macronutrient composition]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 		</field>
 		<field header="Parameter Value[Feed source]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false">
@@ -122,7 +150,9 @@
 				<![CDATA[Vendor of the feed tested if commercially available]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 		</field>
 		<field header="Parameter Value[Feed catalog number]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false">
@@ -130,7 +160,9 @@
 				<![CDATA[Catalog number of the feed if commercially available.]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 		</field>
 		<field header="Factor Value[Feed name]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false">
@@ -138,7 +170,9 @@
 				<![CDATA[Descriptive name of the diet]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 		</field>
 		<protocol-field protocol-type ="Substance treatment"/>
@@ -162,7 +196,9 @@
 				<![CDATA[Amount of time between subsequent doses when multiple doses are administered over a period of time.]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 		</field>
 		<unit-field data-type="String" is-multiple-value="false" is-required="false" is-forced-ontology="false">
@@ -174,7 +210,9 @@
 				<![CDATA[The number of doses administered when multiple doses are given over a period of time.]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 		</field>
 		<field header="Parameter Value[administration route]" data-type="List" is-file-field="false" is-multiple-value="true" is-required="true" is-hidden="false" is-forced-ontology="false">
@@ -182,16 +220,34 @@
 				<![CDATA[The delivery mechanism for the toxicant tested.]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 			<list-values>GAVAGE,INTRAPERITONEAL,RETRO-ORBITAL,TAIL VEIN INJECTION,DIET,WATER,DOUGH PILL</list-values>
 		</field>
+		<field header="Parameter Value[administration volume]" data-type="Double" is-file-field="false" is-multiple-value="true" is-required="false" is-hidden="false" is-forced-ontology="false">
+			<description>
+				<![CDATA[The volume in which the substance was administered to the organism.]]>
+			</description>
+			<default-value>
+				<![CDATA[
+				
+			]]>
+			</default-value>
+		</field>
+		<unit-field data-type="String" is-multiple-value="false" is-required="false" is-forced-ontology="false">
+			<default-value/>
+			<description>Administration volume unit"</description>
+		</unit-field>
 		<field header="Parameter Value[chemical cat no]" data-type="String" is-file-field="false" is-multiple-value="true" is-required="false" is-hidden="false" is-forced-ontology="false">
 			<description>
 				<![CDATA[Catalog number of the toxicant.]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 		</field>
 		<field header="Parameter Value[chemical vendor]" data-type="String" is-file-field="false" is-multiple-value="true" is-required="false" is-hidden="false" is-forced-ontology="false">
@@ -199,7 +255,9 @@
 				<![CDATA[Vendor of the toxicant tested]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 		</field>
 		<field header="Parameter Value[purity]" data-type="String" is-file-field="true" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false">
@@ -207,7 +265,9 @@
 				<![CDATA[Chemical purity of the toxicant. A sample information sheet from the vendor can be attached.]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 		</field>
 		<field header="Factor Value[dose]" data-type="Double" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
@@ -215,11 +275,13 @@
 				<![CDATA[Dose of the toxicant]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 		</field>
 		<unit-field data-type="String" is-multiple-value="false" is-required="false" is-forced-ontology="true">
-			<default-value></default-value>
+			<default-value/>
 			<description>Dose unit"</description>
 		</unit-field>
 		<protocol-field protocol-type ="Euthanasia"/>
@@ -228,7 +290,9 @@
 				<![CDATA[Amount of time animals were fasted prior to euthanisation.]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 		</field>
 		<field header="Parameter Value[Euthanasia method]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="false" is-hidden="false" is-forced-ontology="false">
@@ -236,7 +300,9 @@
 				<![CDATA[Method used for euthanasia.]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 		</field>
 		<field header="Factor Value[time point]" data-type="Double" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
@@ -244,11 +310,13 @@
 				<![CDATA[Time point at which the sample was collected.]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 		</field>
 		<unit-field data-type="String" is-multiple-value="false" is-required="true" is-forced-ontology="false">
-			<default-value></default-value>
+			<default-value/>
 			<description>Time-point unit"</description>
 		</unit-field>
 		<field header="Sample Name" data-type="String" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
@@ -256,7 +324,9 @@
 				<![CDATA[Samples represent major outputs resulting from a protocol application other than the special case outputs of Extract or a Labeled Extract.]]>
 			</description>
 			<default-value>
-				<![CDATA[]]>
+				<![CDATA[
+				
+			]]>
 			</default-value>
 		</field>
 		<structured-field name="characteristics"/>

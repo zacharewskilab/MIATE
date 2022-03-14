@@ -29,6 +29,7 @@ Study
 Animal details									
 	Organism	Characteristic	Ontology	NCBI Taxonomy		Provide taxonomic information associated to the source biological material. This should be included as an NCBI_TAXON ID unless not found within NCBI.	X	X	X
 	Strain	Characteristic	Ontology	Rat Strain Ontology (RS); EFO		Provide strain information associated to the source biological material.	X		X
+	Organism supplier	Characteristic				Provide the name of the vendor for the organism	X		X
 	Cell line	Characteristic	Ontology	Cell Culture Ontology (CCONT)				X	
 	Sex	Characteristic	Ontology	EFO		"Sex of the study organism. Must be one of the following: FEMALE, MALE"	X		X
 	Study start age	Parameter	Number		Y (EFO)	Age of the organism at the time the first dose was administered.	X		X
@@ -52,6 +53,7 @@ Substance exposure
 	Administration Interval	Parameter	Number		Y (EFO)	Amount of time between subsequent doses when multiple doses are administered over a period of time.	X	X	X
 	Number of Administrations	Parameter	Number			The number of doses administered when multiple doses are given over a period of time.	X	X	X
 	Administration Route	Parameter	String			"The delivery mechanism for the toxicant tested. Must be one of the following: GAVAGE,INTRAPERITONEAL,RETRO-ORBITAL,TAIL VEIN INJECTION,DIET,WATER,DOUGH PILL"	X	X	X
+	Administration volume	Parameter	Number		Y (EFO)	The volume in which the substance was administered	X	X	X
 	Dose	Factor	Number		Y (EFO)	Dose of the toxic substance	X	X (concentration)	X
 	Chemical Source	Parameter	String			Vendor of the toxic substance tested if commercially available	X	X	X
 	Chemical Catalog Number	Parameter	String			Catalog number of the toxicant if commercially available.	X	X	X
@@ -59,8 +61,8 @@ Substance exposure
 Exposure details									
 	Time-point	Factor	Number		Y (EFO)	Terminal time-point.	X	X	X
 Termination Conditions									
-	Fasting duration	Parameter	Number		Y (EFO)	Number of hourse animals were fasted prior to euthanisation.	X		X
-	Euthanasia method	Parameter	String			Method use for euthanasia.	X		X
+	ad lib feeding	Parameter	Number			Yes or No 	X		X
+	Euthanasia method	Parameter	String	NCIT		Method used for euthanasia.	X		X
 Cell Culture Conditions (in progress)									
 	Incubation temperature							X	X
 	Gas composition							X	X

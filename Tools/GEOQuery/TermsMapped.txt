@@ -1,0 +1,516 @@
+TermName	TermSynonym	GROUP
+ Expiration date	Expiration date	TERM
+Acclimation duration	Acclimation duration	TERM + TBC
+feed restricted	Ad lib (Y/N)	TERM + TBC + MIATE
+nutritional status	Ad lib (Y/N)	TERM + TBC + MIATE
+Ad lib (Y/N)	Ad lib (Y/N)	TERM + TBC + MIATE
+Additional treatment	Additional treatment	TBC
+ADMINISTRATION	Administration interval	TERM + TBC + MIATE
+condition	Administration interval	TERM + TBC + MIATE
+daily dose	Administration interval	TERM + TBC + MIATE
+exposure paradigm	Administration interval	TERM + TBC + MIATE
+frequency of treatment	Administration interval	TERM + TBC + MIATE
+number of doses	Administration interval	TERM + TBC + MIATE
+regimen	Administration interval	TERM + TBC + MIATE
+time of dose	Administration interval	TERM + TBC + MIATE
+treatment/exposure info	Administration interval	TERM + TBC + MIATE
+treatment frequency	Administration interval	TERM + TBC + MIATE
+treatment period	Administration interval	TERM + TBC + MIATE
+units of treatment repeat	Administration interval	TERM + TBC + MIATE
+units of treatment time	Administration interval	TERM + TBC + MIATE
+weekly dosing	Administration interval	TERM + TBC + MIATE
+window of exposure	Administration interval	TERM + TBC + MIATE
+Administration interval	Administration interval	TERM + TBC + MIATE
+route	Administration route	TERM + TBC + MIATE
+route of exposure	Administration route	TERM + TBC + MIATE
+ route	Administration route	TERM + TBC + MIATE
+vehicle_route_designation	Administration route	TERM + TBC + MIATE
+administration route	Administration route	TERM + TBC + MIATE
+exposure method	Administration route	TERM + TBC + MIATE
+exposure route	Administration route	TERM + TBC + MIATE
+age	Age	TERM + TBC + MIATE
+ Age	Age	TERM + TBC + MIATE
+age (at weaning)	Age	TERM + TBC + MIATE
+age (days)	Age	TERM + TBC + MIATE
+age exposure	Age	TERM + TBC + MIATE
+age/genotype	Age	TERM + TBC + MIATE
+age (mo)	Age	TERM + TBC + MIATE
+age (month)	Age	TERM + TBC + MIATE
+age (months)	Age	TERM + TBC + MIATE
+age of treatment	Age	TERM + TBC + MIATE
+age (postnatal day p)	Age	TERM + TBC + MIATE
+age (pup)	Age	TERM + TBC + MIATE
+age rapamycin exposure	Age	TERM + TBC + MIATE
+ages	Age	TERM + TBC + MIATE
+age_unit	Age	TERM + TBC + MIATE
+age unit	Age	TERM + TBC + MIATE
+age_unit_ontology	Age	TERM + TBC + MIATE
+age (weeks)	Age	TERM + TBC + MIATE
+age(weeks)	Age	TERM + TBC + MIATE
+age x-ray exposure	Age	TERM + TBC + MIATE
+animal age	Age	TERM + TBC + MIATE
+embryo gestational age	Age	TERM + TBC + MIATE
+embryonic age	Age	TERM + TBC + MIATE
+embryonic stage	Age	TERM + TBC + MIATE
+foetal age	Age	TERM + TBC + MIATE
+mother mouse age	Age	TERM + TBC + MIATE
+mouse age	Age	TERM + TBC + MIATE
+postnatal age	Age	TERM + TBC + MIATE
+develomental stage	Age	TERM + TBC + MIATE
+developmental period	Age	TERM + TBC + MIATE
+developmental stage	Age	TERM + TBC + MIATE
+developmental state	Age	TERM + TBC + MIATE
+Development stage	Age	TERM + TBC + MIATE
+develpmetal stage	Age	TERM + TBC + MIATE
+dev stage	Age	TERM + TBC + MIATE
+Stage	Age	TERM + TBC + MIATE
+age (at analysis)	Age	TERM + TBC + MIATE
+age at collection	Age	TERM + TBC + MIATE
+age at death (days)	Age	TERM + TBC + MIATE
+age at sacrifice	Age	TERM + TBC + MIATE
+age at sacrifice (days)	Age	TERM + TBC + MIATE
+age at study start	Age	TERM + TBC + MIATE
+age sacrificed	Age	TERM + TBC + MIATE
+end_age	Age	TERM + TBC + MIATE
+age at dosing	Age	TERM + TBC + MIATE
+age_at_exposure	Age	TERM + TBC + MIATE
+age at initial dose	Age	TERM + TBC + MIATE
+age at irradiation	Age	TERM + TBC + MIATE
+age at irradiation (days)	Age	TERM + TBC + MIATE
+age at start	Age	TERM + TBC + MIATE
+age at tx start	Age	TERM + TBC + MIATE
+start_age	Age	TERM + TBC + MIATE
+treated on	Age	TERM + TBC + MIATE
+treatment age onset	Age	TERM + TBC + MIATE
+treatment start timepoint	Age	TERM + TBC + MIATE
+"Alteration (mutation, knock-in, RNAi, etc.)"	"Alteration (mutation, knock-in, RNAi, etc.)"	TBC
+Anesthetic used	Euthanasia method	TERM + TBC + MIATE
+pretreatment drug & dose	Any interventions that were carried out before or during the experiment 	TERM
+activating condition	Any interventions that were carried out before or during the experiment 	TERM
+animal model	Any interventions that were carried out before or during the experiment 	TERM
+pretreatment	Any interventions that were carried out before or during the experiment 	TERM
+tranduction	Any interventions that were carried out before or during the experiment 	TERM
+transduction	Any interventions that were carried out before or during the experiment 	TERM
+Any interventions that were carried out before or during the experiment 	Any interventions that were carried out before or during the experiment 	TERM
+housing_humidity	Average vivarium humidity	TERM + MIATE
+humidity_unit_ontology	Average vivarium humidity	TERM + MIATE
+humidity_unit	Average vivarium humidity	TERM + MIATE
+Average vivarium humidity	Average vivarium humidity	TERM + MIATE
+housing_temperature	Average vivarium temperature	TERM + MIATE
+ambient temperature	Average vivarium temperature	TERM + MIATE
+exposure (temperature)	Average vivarium temperature	TERM + MIATE
+post-hypoxia-temperature	Average vivarium temperature	TERM + MIATE
+pre-hypoxia-temperature	Average vivarium temperature	TERM + MIATE
+temperature	Average vivarium temperature	TERM + MIATE
+temperature (degree celsius)	Average vivarium temperature	TERM + MIATE
+temperature(degree celsius)	Average vivarium temperature	TERM + MIATE
+temperature_unit	Average vivarium temperature	TERM + MIATE
+temperature_unit_ontology	Average vivarium temperature	TERM + MIATE
+Average vivarium temperature	Average vivarium temperature	TERM + MIATE
+bedding	Bedding type	TERM + MIATE
+bedding type	Bedding type	TERM + MIATE
+Breeding programme	Breeding programme	TERM
+cage_type	Cage type	TERM + MIATE
+cage type	Cage type	TERM + MIATE
+cas number	CAS number	TERM + TBC + MIATE
+compound cas no	CAS number	TERM + TBC + MIATE
+treatment cas	CAS number	TERM + TBC + MIATE
+catalog_number	Chemical catalog number	TERM + MIATE
+Chemical catalog number	Chemical catalog number	TERM + MIATE
+toxic_substance_purity	Chemical purity	TERM + MIATE
+Chemical purity	Chemical purity	TERM + MIATE
+vendor	Chemical source	TERM + MIATE
+Chemical source	Chemical source	TERM + MIATE
+Concentration of diluents	Concentration of diluents	TERM
+Controls	Vehicle	TERM + TBC + MIATE
+amount of vehicle	Delivery volume	TERM
+Delivery volume	Delivery volume	TERM
+Developmental stage	Developmental stage	TERM
+absorbed dose	Dose	TERM + TBC + MIATE
+accrued radiation dose	Dose	TERM + TBC + MIATE
+agent dose	Dose	TERM + TBC + MIATE
+amount administered	Dose	TERM + TBC + MIATE
+amount in (µg)	Dose	TERM + TBC + MIATE
+avelumab dose	Dose	TERM + TBC + MIATE
+compound dose [mg/kg]	Dose	TERM + TBC + MIATE
+compounds/dose (mg/kg)	Dose	TERM + TBC + MIATE
+cpp conditioning drug and dose	Dose	TERM + TBC + MIATE
+dibutyl phthalate dose level	Dose	TERM + TBC + MIATE
+dinitrobenzene dosage	Dose	TERM + TBC + MIATE
+dosage	Dose	TERM + TBC + MIATE
+dose	Dose	TERM + TBC + MIATE
+dose 1	Dose	TERM + TBC + MIATE
+dose 2	Dose	TERM + TBC + MIATE
+dose amount (mg_per_kg_per_day)	Dose	TERM + TBC + MIATE
+dose flutamide	Dose	TERM + TBC + MIATE
+dose (µg/kg)	Dose	TERM + TBC + MIATE
+dose group	Dose	TERM + TBC + MIATE
+dose level (mg/kg)	Dose	TERM + TBC + MIATE
+dose (mg/kg)	Dose	TERM + TBC + MIATE
+dose(mg/kg)	Dose	TERM + TBC + MIATE
+dose (mg/kg) compound 2nd	Dose	TERM + TBC + MIATE
+dose (mg/kg) compound given 1st	Dose	TERM + TBC + MIATE
+dose (mg/kg/d)	Dose	TERM + TBC + MIATE
+dose (mkd)	Dose	TERM + TBC + MIATE
+dose_number	Dose	TERM + TBC + MIATE
+dose (ppm)	Dose	TERM + TBC + MIATE
+doses	Dose	TERM + TBC + MIATE
+dose (ug)	Dose	TERM + TBC + MIATE
+dose (ug/kg)	Dose	TERM + TBC + MIATE
+dose unit	Dose	TERM + TBC + MIATE
+dose_unit	Dose	TERM + TBC + MIATE
+dose_unit_ontology	Dose	TERM + TBC + MIATE
+dose units	Dose	TERM + TBC + MIATE
+dose volume	Dose	TERM + TBC + MIATE
+e2dose	Dose	TERM + TBC + MIATE
+iv treatment	Dose	TERM + TBC + MIATE
+lead exposure level	Dose	TERM + TBC + MIATE
+levels of exposure	Dose	TERM + TBC + MIATE
+loading dose level (ug/kg)	Dose	TERM + TBC + MIATE
+lps dosing	Dose	TERM + TBC + MIATE
+lung log10cfu	Dose	TERM + TBC + MIATE
+lung radiation dose	Dose	TERM + TBC + MIATE
+ MA dose	Dose	TERM + TBC + MIATE
+maintenance dose level (ug/kg)	Dose	TERM + TBC + MIATE
+nhs-muil12 dose	Dose	TERM + TBC + MIATE
+nsaid dose	Dose	TERM + TBC + MIATE
+phenobarbital dose (ppm)	Dose	TERM + TBC + MIATE
+radiation dose	Dose	TERM + TBC + MIATE
+ra exposure	Dose	TERM + TBC + MIATE
+styrene dose (ppm)	Dose	TERM + TBC + MIATE
+tcdd dose	Dose	TERM + TBC + MIATE
+tcdd dose (f0)	Dose	TERM + TBC + MIATE
+total body irradiation dose	Dose	TERM + TBC + MIATE
+treated daily with	Dose	TERM + TBC + MIATE
+treatment_(diet+treatment)	Dose	TERM + TBC + MIATE
+treatment dosage	Dose	TERM + TBC + MIATE
+treatment_dose	Dose	TERM + TBC + MIATE
+treatment dose	Dose	TERM + TBC + MIATE
+treatment dose and postexposure time	Dose	TERM + TBC + MIATE
+treatment/dose	Dose	TERM + TBC + MIATE
+treatment_dose [mg/kg/d]	Dose	TERM + TBC + MIATE
+treatment dose [mg/kg/day]	Dose	TERM + TBC + MIATE
+treatment_dose [% w/v]	Dose	TERM + TBC + MIATE
+treatment group	Dose	TERM + TBC + MIATE
+treatment/group	Dose	TERM + TBC + MIATE
+treatment (mg/kg)	Dose	TERM + TBC + MIATE
+uvr treatment	Dose	TERM + TBC + MIATE
+venlafaxine dose [kg/d/kg]	Dose	TERM + TBC + MIATE
+x-ray dose (gy)	Dose	TERM + TBC + MIATE
+zileuton dose (mg/kg)	Dose	TERM + TBC + MIATE
+housing environment	Environmental enrichment	TERM
+Environmental enrichment	Environmental enrichment	TERM
+anesthesia	Euthanasia method	TERM + TBC + MIATE
+Euthanasia method	Euthanasia method	TERM + TBC + MIATE
+Exposure design	Exposure design	TERM
+"Exposure duration (hours, days, weeks)"	"Exposure duration (hours, days, weeks)"	TERM
+Fasting duration	Fasting duration	TBC + MIATE
+feed_catalog_no	Feed catalog number	MIATE
+Feed catalog number	Feed catalog number	MIATE
+chow	Feed name	TERM + TBC + MIATE
+dam diet	Feed name	TERM + TBC + MIATE
+diet	Feed name	TERM + TBC + MIATE
+diet 0-24wk	Feed name	TERM + TBC + MIATE
+diet group	Feed name	TERM + TBC + MIATE
+fed with	Feed name	TERM + TBC + MIATE
+Feed	Feed name	TERM + TBC + MIATE
+feed_description	Feed name	TERM + TBC + MIATE
+prenatal diet	Feed name	TERM + TBC + MIATE
+Feed description	Feed name	TERM + TBC + MIATE
+Feed name	Feed name	TERM + TBC + MIATE
+feed_source	Feed source	MIATE
+Feed source	Feed source	MIATE
+Final concentration of vehicle in test item	Final concentration of vehicle in test item	TERM
+Formula	Formula	TERM + TBC + MIATE
+Health status and acclimation prior to study start	Health status and acclimation prior to study start	TERM
+Identification of impurities	Identification of impurities	TERM
+InChl code	InChl code	TBC + MIATE
+Lot (Batch) number	Lot (Batch) number	TERM
+Maximum volume of liquid administered	Maximum volume of liquid administered	TERM
+Molecular weight	Molecular weight	TERM
+number of treatments	Number of administrations	MIATE
+Number of administrations	Number of administrations	MIATE
+Number per cage	Number per cage	TERM + TBC
+Percentate og substances	Percentate of substances	TERM
+Pre-treatments (e.g. metabolic activation)	Pre-treatments (e.g. metabolic activation)	TERM
+Quality criteria before use	Quality criteria before use	TERM
+Randomisation of animals to groups	Randomisation of animals to groups	TERM
+Salt form	Salt form	TERM
+embryo sex	Sex	TERM + TBC + MIATE
+gender	Sex	TERM + TBC + MIATE
+ Gender	Sex	TERM + TBC + MIATE
+ 'Gender	Sex	TERM + TBC + MIATE
+Gender 	Sex	TERM + TBC + MIATE
+gender (pup)	Sex	TERM + TBC + MIATE
+gener	Sex	TERM + TBC + MIATE
+mice sex	Sex	TERM + TBC + MIATE
+mouse sex	Sex	TERM + TBC + MIATE
+mouse train	Sex	TERM + TBC + MIATE
+sex chromosome complement	Sex	TERM + TBC + MIATE
+Sex	Sex	TERM + TBC + MIATE
+ Sex	Sex	TERM + TBC + MIATE
+Sex of donor mice	Sex	TERM + TBC + MIATE
+Sex of recipient mice	Sex	TERM + TBC + MIATE
+sex_ontology	Sex	TERM + TBC + MIATE
+s sex	Sex	TERM + TBC + MIATE
+SMILE string	SMILE string	TERM + TBC + MIATE
+Storage	Storage	TERM
+animal line	Strain	TERM + TBC + MIATE
+background	Strain	TERM + TBC + MIATE
+background strain	Strain	TERM + TBC + MIATE
+charlers river strain code	Strain	TERM + TBC + MIATE
+donor_genotype	Strain	TERM + TBC + MIATE
+genetic background	Strain	TERM + TBC + MIATE
+host strain	Strain	TERM + TBC + MIATE
+line	Strain	TERM + TBC + MIATE
+Male Sprague-Dawley (Crl	Strain	TERM + TBC + MIATE
+mice	Strain	TERM + TBC + MIATE
+mouse background	Strain	TERM + TBC + MIATE
+mouse line	Strain	TERM + TBC + MIATE
+mouse strain	Strain	TERM + TBC + MIATE
+specific-host	Strain	TERM + TBC + MIATE
+srtain	Strain	TERM + TBC + MIATE
+strain	Strain	TERM + TBC + MIATE
+strain/backgorund	Strain	TERM + TBC + MIATE
+strain backgroud	Strain	TERM + TBC + MIATE
+strain background	Strain	TERM + TBC + MIATE
+strain/background	Strain	TERM + TBC + MIATE
+strain background info	Strain	TERM + TBC + MIATE
+ Strain Crl	Strain	TERM + TBC + MIATE
+strain (donor)	Strain	TERM + TBC + MIATE
+strain gender	Strain	TERM + TBC + MIATE
+strain/gender/tissue	Strain	TERM + TBC + MIATE
+strain/genotype	Strain	TERM + TBC + MIATE
+strain (host)	Strain	TERM + TBC + MIATE
+strain/model	Strain	TERM + TBC + MIATE
+strain of mouse	Strain	TERM + TBC + MIATE
+strain_ontology	Strain	TERM + TBC + MIATE
+strain or line	Strain	TERM + TBC + MIATE
+Strain 	Strain	TERM + TBC + MIATE
+Strains	Strain	TERM + TBC + MIATE
+'Strain	Strain	TERM + TBC + MIATE
+ Strain	Strain	TERM + TBC + MIATE
+strain/wt	Strain	TERM + TBC + MIATE
+strian	Strain	TERM + TBC + MIATE
+unc_id1	Strain	TERM + TBC + MIATE
+unc_id2	Strain	TERM + TBC + MIATE
+ strain	Strain	TERM + TBC + MIATE
+Study end age	Age	TERM + TBC + MIATE
+Study start age	Age	TERM + TBC + MIATE
+activation agent	Substance	TERM + TBC + MIATE
+acute treatment	Substance	TERM + TBC + MIATE
+administered with	Substance	TERM + TBC + MIATE
+adult treatment	Substance	TERM + TBC + MIATE
+aerosol exposure	Substance	TERM + TBC + MIATE
+agent	Substance	TERM + TBC + MIATE
+agent (mother exposed to)	Substance	TERM + TBC + MIATE
+antibiotics	Substance	TERM + TBC + MIATE
+challenge	Substance	TERM + TBC + MIATE
+challenged with	Substance	TERM + TBC + MIATE
+chamber treatment	Substance	TERM + TBC + MIATE
+chemical	Substance	TERM + TBC + MIATE
+chemical (mmol/kg )	Substance	TERM + TBC + MIATE
+chemical treatment	Substance	TERM + TBC + MIATE
+chronic treatment	Substance	TERM + TBC + MIATE
+compound	Substance	TERM + TBC + MIATE
+compound 1	Substance	TERM + TBC + MIATE
+compound 2	Substance	TERM + TBC + MIATE
+compound abbreviation	Substance	TERM + TBC + MIATE
+compound given 1st	Substance	TERM + TBC + MIATE
+compound given 2nd	Substance	TERM + TBC + MIATE
+cpound full name	Substance	TERM + TBC + MIATE
+dam treatment group	Substance	TERM + TBC + MIATE
+drug	Substance	TERM + TBC + MIATE
+drug (crofelemer) treatment	Substance	TERM + TBC + MIATE
+drug treatment	Substance	TERM + TBC + MIATE
+exosure	Substance	TERM + TBC + MIATE
+exposed_odorant	Substance	TERM + TBC + MIATE
+exposed to	Substance	TERM + TBC + MIATE
+exposure	Substance	TERM + TBC + MIATE
+ Exposure	Substance	TERM + TBC + MIATE
+exposure in utelus	Substance	TERM + TBC + MIATE
+exposure status	Substance	TERM + TBC + MIATE
+exposure/treatment condition	Substance	TERM + TBC + MIATE
+f0 exposure	Substance	TERM + TBC + MIATE
+f0 treatment	Substance	TERM + TBC + MIATE
+gavaged with	Substance	TERM + TBC + MIATE
+hormone treatment	Substance	TERM + TBC + MIATE
+in utero exposure	Substance	TERM + TBC + MIATE
+in utero treatment	Substance	TERM + TBC + MIATE
+in vivo treatment	Substance	TERM + TBC + MIATE
+lineage	Substance	TERM + TBC + MIATE
+maternal exposure	Substance	TERM + TBC + MIATE
+maternal injection	Substance	TERM + TBC + MIATE
+maternal injections	Substance	TERM + TBC + MIATE
+metal	Substance	TERM + TBC + MIATE
+molecule exposure	Substance	TERM + TBC + MIATE
+nanomaterial	Substance	TERM + TBC + MIATE
+nsaid	Substance	TERM + TBC + MIATE
+postnatal exposure	Substance	TERM + TBC + MIATE
+postnatally treated with	Substance	TERM + TBC + MIATE
+postnatal treatment	Substance	TERM + TBC + MIATE
+post-natal treatment	Substance	TERM + TBC + MIATE
+prenatal exposure	Substance	TERM + TBC + MIATE
+prenatal exposure to	Substance	TERM + TBC + MIATE
+radiation modality	Substance	TERM + TBC + MIATE
+radiation quality	Substance	TERM + TBC + MIATE
+stimulation	Substance	TERM + TBC + MIATE
+stimulus	Substance	TERM + TBC + MIATE
+stress	Substance	TERM + TBC + MIATE
+stz-treatment	Substance	TERM + TBC + MIATE
+sunscreen treatment	Substance	TERM + TBC + MIATE
+toxicant	Substance	TERM + TBC + MIATE
+toxic_substance	Substance	TERM + TBC + MIATE
+toxic_substance_ontology	Substance	TERM + TBC + MIATE
+treament	Substance	TERM + TBC + MIATE
+treated with	Substance	TERM + TBC + MIATE
+treatment	Substance	TERM + TBC + MIATE
+treatment 1	Substance	TERM + TBC + MIATE
+treatment_1	Substance	TERM + TBC + MIATE
+treatment 2	Substance	TERM + TBC + MIATE
+treatment_2	Substance	TERM + TBC + MIATE
+treatment2_in vivo treatment	Substance	TERM + TBC + MIATE
+treatment 7-24wk)	Substance	TERM + TBC + MIATE
+treatment_agent	Substance	TERM + TBC + MIATE
+treatment at zt3	Substance	TERM + TBC + MIATE
+treatment_compound	Substance	TERM + TBC + MIATE
+treatment condition	Substance	TERM + TBC + MIATE
+treatment/exposure	Substance	TERM + TBC + MIATE
+treatment full name	Substance	TERM + TBC + MIATE
+treatment_full_name	Substance	TERM + TBC + MIATE
+treatment (pregnant rat)	Substance	TERM + TBC + MIATE
+treatment type	Substance	TERM + TBC + MIATE
+treatment_type	Substance	TERM + TBC + MIATE
+treatmnet	Substance	TERM + TBC + MIATE
+type of fibre	Substance	TERM + TBC + MIATE
+vapor treatment	Substance	TERM + TBC + MIATE
+vector	Substance	TERM + TBC + MIATE
+x-ray exposure	Substance	TERM + TBC + MIATE
+Substance	Substance	TERM + TBC + MIATE
+animal provider	Supplier	TERM + TBC + MIATE
+Supplier	Supplier	TERM + TBC + MIATE
+ alb-cre	Targeted locus	TBC
+tta genotype	Targeted locus	TBC
+Targeted locus	Targeted locus	TBC
+Test Item Specific Identifiers	Substance	TERM + TBC + MIATE
+"The recovery period (in days, weeks, months, if any) after the exposure to the test substance."	"The recovery period (in days, weeks, months, if any) after the exposure to the test substance."	TERM
+post treatment recovery (weeks)	Time since last dose administered	TERM
+post-treatment survival	Time since last dose administered	TERM
+recovery	Time since last dose administered	TERM
+recovery time	Time since last dose administered	TERM
+time after cyp treatment	Time since last dose administered	TERM
+time after exposure	Time since last dose administered	TERM
+time after final dose	Time since last dose administered	TERM
+time after stz	Time since last dose administered	TERM
+time after treatment	Time since last dose administered	TERM
+time (days post-treatment)	Time since last dose administered	TERM
+Time since last dose administered	Time since last dose administered	TERM
+agent time	Time-point	TERM + TBC + MIATE
+day	Time-point	TERM + TBC + MIATE
+day of sacrifice	Time-point	TERM + TBC + MIATE
+day post infection (dpi)	Time-point	TERM + TBC + MIATE
+days	Time-point	TERM + TBC + MIATE
+ days	Time-point	TERM + TBC + MIATE
+days after birth	Time-point	TERM + TBC + MIATE
+days after treatment	Time-point	TERM + TBC + MIATE
+delay for observation	Time-point	TERM + TBC + MIATE
+experimental time point	Time-point	TERM + TBC + MIATE
+exposure length	Time-point	TERM + TBC + MIATE
+exposure time	Time-point	TERM + TBC + MIATE
+exposure time (hrs)	Time-point	TERM + TBC + MIATE
+harvest time after exposure	Time-point	TERM + TBC + MIATE
+harvest time point	Time-point	TERM + TBC + MIATE
+harvest timepoint	Time-point	TERM + TBC + MIATE
+hour post stimulation	Time-point	TERM + TBC + MIATE
+hours	Time-point	TERM + TBC + MIATE
+hours post infection or injection	Time-point	TERM + TBC + MIATE
+ months	Time-point	TERM + TBC + MIATE
+post-exposure time	Time-point	TERM + TBC + MIATE
+post-exposure timepoint (days)	Time-point	TERM + TBC + MIATE
+post infection	Time-point	TERM + TBC + MIATE
+post-instillation period	Time-point	TERM + TBC + MIATE
+post-treatment timepoint	Time-point	TERM + TBC + MIATE
+sacrifice	Time-point	TERM + TBC + MIATE
+Sacrifice Method	Time-point	TERM + TBC + MIATE
+sacrifice time	Time-point	TERM + TBC + MIATE
+sample collection time	Time-point	TERM + TBC + MIATE
+sample time	Time-point	TERM + TBC + MIATE
+sampling day	Time-point	TERM + TBC + MIATE
+sampling time	Time-point	TERM + TBC + MIATE
+sampling time after initiation intervention=treatment=diet	Time-point	TERM + TBC + MIATE
+sampling time (hours)	Time-point	TERM + TBC + MIATE
+termination time point (post injection)	Time-point	TERM + TBC + MIATE
+time	Time-point	TERM + TBC + MIATE
+ time'	Time-point	TERM + TBC + MIATE
+ time	Time-point	TERM + TBC + MIATE
+time after treatment initiation	Time-point	TERM + TBC + MIATE
+time (days)	Time-point	TERM + TBC + MIATE
+time (hours)	Time-point	TERM + TBC + MIATE
+time_hr_post_hypoxia	Time-point	TERM + TBC + MIATE
+time of collection	Time-point	TERM + TBC + MIATE
+time of exposure	Time-point	TERM + TBC + MIATE
+time of harvest	Time-point	TERM + TBC + MIATE
+time of sample collection (zt9 light phase vs zt21 dark phase)	Time-point	TERM + TBC + MIATE
+time period	Time-point	TERM + TBC + MIATE
+time p.i.	Time-point	TERM + TBC + MIATE
+timepoint	Time-point	TERM + TBC + MIATE
+time point	Time-point	TERM + TBC + MIATE
+time_point	Time-point	TERM + TBC + MIATE
+time-point	Time-point	TERM + TBC + MIATE
+time point (day)	Time-point	TERM + TBC + MIATE
+time point (days)	Time-point	TERM + TBC + MIATE
+timepoint(days)	Time-point	TERM + TBC + MIATE
+timepoint [days]	Time-point	TERM + TBC + MIATE
+time-point (hours)	Time-point	TERM + TBC + MIATE
+time point (hr)	Time-point	TERM + TBC + MIATE
+time-point in minutes	Time-point	TERM + TBC + MIATE
+timepoint (post-treatment in hours)	Time-point	TERM + TBC + MIATE
+time point (pup age)	Time-point	TERM + TBC + MIATE
+time_point_unit	Time-point	TERM + TBC + MIATE
+time_point_unit_ontology	Time-point	TERM + TBC + MIATE
+time point (weeks)	Time-point	TERM + TBC + MIATE
+time post exposure	Time-point	TERM + TBC + MIATE
+time (post-infection)	Time-point	TERM + TBC + MIATE
+time (post-instillation period)	Time-point	TERM + TBC + MIATE
+time post-ischemia	Time-point	TERM + TBC + MIATE
+time post-light stim	Time-point	TERM + TBC + MIATE
+time post treatment	Time-point	TERM + TBC + MIATE
+Time post-treatment	Time-point	TERM + TBC + MIATE
+time sacrificed	Time-point	TERM + TBC + MIATE
+timetofirstszmin	Time-point	TERM + TBC + MIATE
+TREATMENT LENGTH	Time-point	TERM + TBC + MIATE
+treatment time	Time-point	TERM + TBC + MIATE
+weeks after aom injection	Time-point	TERM + TBC + MIATE
+week	Time-point	TERM + TBC + MIATE
+Treatments	Substance	TERM + TBC + MIATE
+Type of facility (e.g. specific pathogen free [SPF])	Type of facility (e.g. specific pathogen free [SPF])	TERM
+Types of replicates	Types of replicates	TERM
+vehicle	Vehicle	TERM + TBC + MIATE
+vehicle 1	Vehicle	TERM + TBC + MIATE
+vehicle 2	Vehicle	TERM + TBC + MIATE
+vehicle for chemical	Vehicle	TERM + TBC + MIATE
+vehicle_substance_ontology	Vehicle	TERM + TBC + MIATE
+vehicle_substance	Vehicle	TERM + TBC + MIATE
+light condition	Vivarum light cycle	TERM + MIATE
+light_cycle	Vivarum light cycle	TERM + MIATE
+Vivarum light cycle	Vivarum light cycle	TERM + MIATE
+water	Water type	MIATE
+Water type	Water type	MIATE
+dose or concentration	Dose	TERM + TBC + MIATE
+treatment administration route	Administration route	TERM + TBC + MIATE
+administration_route	Administration route	TERM + TBC + MIATE
+exposure route	Administration route	TERM + TBC + MIATE
+age at initial dose	Dose	TERM + TBC + MIATE
+agent dose (mg rdx/kg body weight)	Dose	TERM + TBC + MIATE
+corn oil dose level	Dose	TERM + TBC + MIATE
+daily dose	Dose	TERM + TBC + MIATE
+dose (�g/kg)	Dose	TERM + TBC + MIATE
+number of doses	Dose	TERM + TBC + MIATE
+pretreatment drug & dose	Dose	TERM + TBC + MIATE
+thiaclopride dose	Dose	TERM + TBC + MIATE
+time after final dose	Dose	TERM + TBC + MIATE
+time of dose	Dose	TERM + TBC + MIATE
+units of dose or concentration	Dose	TERM + TBC + MIATE
+administration_interval	Administration interval	TERM + TBC + MIATE
+administration_interval_unit	Administration interval	TERM + TBC + MIATE
+administration_interval_unit_ontology	Administration interval	TERM + TBC + MIATE

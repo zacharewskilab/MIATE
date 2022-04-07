@@ -66,6 +66,8 @@ head TermsMapped.txt
 ```
 
 7. Analyze the data. A template R notebook is included in this repository. 
-
+```console
+R -e "rmarkdown::render('GEO_metadata_reporting_standards.Rmd')"
+```
 
 

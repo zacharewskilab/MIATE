@@ -1,0 +1,142 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r}
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(webchem)
+  library(circlize)
+  library(ggplot2)
+  library(pheatmap)
+})
+```
+
+Import the file mapping terms in the GEO datasets to a common term for the TERM, TBC, and MIATE reporting standards. The file was created through manual curation. 
+```{r}
+TermSynonyms <- read.delim('TermsMapped.txt', sep = '\t', header = T)
+```
+
+Import the metadata from the GEO datasets
+```{r}
+GEO_data <- read.delim('GEO_CharacteristicExtracted5.txt', sep = '\t', header = F)
+colnames(GEO_data) <- c('mat', 'channel', 'index', 'value')
+```
+
+Create a merged dataset that combines the key mapping with original metadata.
+```{r}
+merged.data <- merge(GEO_data, TermSynonyms, by.x = 'index', by.y = 'TermName')
+term.table <- table(merged.data$mat, merged.data$TermSynonym)
+term.table[which(term.table > 0)] <- 1
+```
+
+Calculate the number of RS terms present in each dataset and filter the 10 datasets with the most identifiable number of metadata terms.
+```{r}
+datasetSums <- rowSums(term.table)
+hist((datasetSums/31)*100, breaks = 31)
+top10 <- data.frame(term.table[names(datasetSums[order(-datasetSums)][1:10]), ])
+```
+
+Calculate the number of datasets reporting each RS term.
+```{r}
+termSums <- colSums(term.table)
+df.term <- data.frame(
+  term_name = names(termSums),
+  term_count = (termSums/length(unique(GEO_data[,1])))*100
+)
+```
+
+Map the dataset terms to a common term.
+```{r}
+df.term <- merge(df.term, unique(TermSynonyms[,c(2,3)]), by.x = 'term_name', by.y = 'TermSynonym', all = TRUE)
+df.term$GROUP <- factor(df.term$GROUP, level = c(
+  "TERM + TBC + MIATE",
+  "TERM + MIATE",
+  "TERM + TBC",
+  "TBC + MIATE",
+  "TERM",
+  "TBC",
+  "MIATE"
+))
+df.term <- df.term[order(df.term$GROUP, -df.term$term_count),]
+df.term$term_name <- factor(df.term$term_name, levels = df.term$term_name)
+df.term[is.na(df.term)] <- 0
+```
+
+Show a histogram of the number of datasets reporting RS terms.
+```{r fig.height = 8, fig.width = 12}
+#cairo_pdf(filename = 'MIATE_barplot_comparison.pdf', height = 9, width = 12)
+  ggplot(data = df.term, aes(x = term_name, y = term_count, fill = GROUP)) +
+    geom_bar(stat = 'identity', color = 'black') + 
+    scale_y_continuous(trans='sqrt') +
+    theme_bw() + 
+    theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1, colour = 'black'))
+#dev.off()
+```
+
+Show a heatmap of the top 10 datasets reporting terms present in the TERM, TBC, and MIATE RSs.
+```{r fig.height = 8}
+o <- intersect(df.term$term_name, colnames(term.table))
+filtered.term.table <- term.table[names(datasetSums[order(-datasetSums)][1:15]), o]
+rownames(filtered.term.table) <- gsub('_series_matrix.txt', '', rownames(filtered.term.table))
+#cairo_pdf(filename = 'MIATE_HM_comparison.pdf', height = 9, width = 12)
+  pheatmap(filtered.term.table, cluster_rows = FALSE, cluster_cols = FALSE, color = c('grey', 'red'), border_color = 'black')
+#dev.off()
+```
+
+Identify the values reporting for a RS term. Here strain is used as an example.
+```{r}
+strain <- unique(
+  toupper(
+  trimws(merged.data %>% filter(TermSynonym == 'Strain') %>% pull(value),
+         which = c('both'), whitespace = "[ \t\r\n]"
+         )
+  )
+  )
+strain <- strain[order(strain)]
+
+strain[1:100]
+```
+
+Automated mapping of chemical names to CAS and SMILES identifiers. 
+```{r}
+substance <- unique(
+  toupper(
+  trimws(merged.data %>% filter(TermSynonym == 'Substance') %>% pull(value),
+         which = c('both'), whitespace = "[ \t\r\n]"
+         )
+  )
+  )
+substance <- substance[!grepl('DAYS', substance)]
+substance <- substance[!grepl('/KG', substance)]
+substance <- substance[!grepl('%', substance)]
+substance <- substance[!grepl(' LIGHT', substance)]
+substance <- substance[!grepl(' HOURS', substance)]
+substance <- substance[!grepl(' EXPOSURE', substance)]
+substance <- substance[!grepl('PERCENT', substance)]
+substance <- substance[order(substance)]
+batch_query_cas <- cir_query(substance, representation = c('cas'), match = 'first', verbose = FALSE)
+batch_query_name <- cir_query(substance, representation = c('names'), match = 'first', verbose = FALSE)
+batch_query_smiles <- cir_query(substance, representation = c('smiles'), match = 'first', verbose = FALSE)
+combined.cas <- t(bind_rows(batch_query_cas, .id = "substance"))
+combined.name <- t(bind_rows(batch_query_name, .id = "substance"))
+combined.smiles <- t(bind_rows(batch_query_smiles, .id = "substance"))
+
+mm <- cbind(combined.cas, combined.name, combined.smiles)
+```
+
+Calculate the number of matches for chemical identifiers.
+```{r}
+cas.match <- sum(!is.na(batch_query_cas))/length(batch_query_cas)*100
+name.match <- sum(!is.na(batch_query_name))/length(batch_query_cas)*100
+smiles.match <- sum(!is.na(batch_query_smiles))/length(batch_query_cas)*100
+```
+A total of `cas.match` were found to possess CAS identifiers and `smiles.match` had SMILES identifiers. A fully automated approach means that many may have an incorrect match. 
+
+```{r}
+sessionInfo()
+```
+

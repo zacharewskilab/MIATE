@@ -1,14 +1,15 @@
 <h1 align="center">
-  <img alt="cgapp logo" src="img" width="224px"/><br/>
+  <img alt="MIATE logo" src="img" width="224px"/><br/>
   Minimum Information about Animal Toxicology Experiments Resources
 </h1>
 
 The Minimum Information about Animal Toxicology Experiments (MIATE) github resources is a suite of documents to 
-assist in the use and evaluation of MIATE to promote the __F__indable, __A__ccessible, __I__teroperable, __R__reusable 
+assist in the use and evaluation of MIATE to promote the <b>F</b>indable, <b>A</b>ccessible, <b>I</b>teroperable, <b>R</b>reusable 
 (FAIR) principles for _in vivo_ animal toxicology experiments.
 
 ==========================================
-Table of Contents
+
+## Table of Contents
 ==========================================
 * [ISA-MIATE Background](#background)
 * [ISA-MIATE Data Model](#datamodel)

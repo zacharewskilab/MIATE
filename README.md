@@ -7,10 +7,34 @@ The Minimum Information about Animal Toxicology Experiments (MIATE) github resou
 assist in the use and evaluation of MIATE to promote the <b>F</b>indable, <b>A</b>ccessible, <b>I</b>teroperable, <b>R</b>reusable 
 (FAIR) principles for _in vivo_ animal toxicology experiments.
 
+# Table of Contents
+* [Checklist](#Checklist)
+* [Templates](#Templates)
+	* [ISA](#desc)
+	* [CEDAR](#assays)
+	* [GEO](#assays)
+* [Examples](#getstarted)
+* [Tools](#populate)
+
+<a name = "Checklist"/><h2>Checklist</h2>
 ==========================================
 
-## Table of Contents
+
+
+<a name = "Templates"/><h2>Templates</h2>
 ==========================================
+<a name = "ISA"/><h3>Templates</h3>
+<a name = "CEDAR"/><h3>Templates</h3>
+<a name = "GEO"/><h3>Templates</h3>
+
+<a name = "Examples"/><h2>Examples</h2>
+==========================================
+
+<a name = "Tools"/><h2>Tools</h2>
+==========================================
+
+
+
 * [ISA-MIATE Background](#background)
 * [ISA-MIATE Data Model](#datamodel)
 * [Getting Started with ISA-MIATE](#getstarted)

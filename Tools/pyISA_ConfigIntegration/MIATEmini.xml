@@ -1,0 +1,112 @@
+<isatab-config-file xmlns="http://www.ebi.ac.uk/bii/isatab_configuration#">
+	<isatab-configuration table-name="studySample">
+		<measurement term-label="[Sample]" term-accession="" source-abbreviation=""/>
+		<technology term-label="" term-accession="" source-abbreviation=""/>
+		<field header="Source Name" data-type="String" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
+			<description>
+				<![CDATA[Sources are considered as the starting biological material used in a study.]]>
+			</description>
+			<default-value>
+				<![CDATA[
+				
+			]]>
+			</default-value>
+		</field>
+		<field header="Characteristics[organism]" data-type="Ontology term" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="true">
+			<description>
+				<![CDATA[Provide a taxonomic information associated to the source biological material. This should be included as an NCBI TaxID unless not found within NCBI]]>
+			</description>
+			<default-value/>
+		</field>
+		<field header="Characteristics[strain]" data-type="Ontology term" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="true">
+			<description>
+				<![CDATA[Provide strain information associated to the source biological material. This should be included using an ontology to ensure consistency in nomenclature]]>
+			</description>
+			<default-value/>
+		</field>
+		<field header="Characteristics[organism supplier]" data-type="String" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
+			<description>
+				<![CDATA[Provide the vendor name or source of the organism and strain]]>
+			</description>
+			<default-value/>
+		</field>
+		<field header="Characteristics[sex]" data-type="List" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
+			<description>
+				<![CDATA[Sex of the study organism. Must be one of the following: FEMALE, MALE]]>
+			</description>
+			<default-value>
+				<![CDATA[
+				
+			]]>
+			</default-value>
+			<list-values>FEMALE,MALE</list-values>
+		</field>
+		<protocol-field protocol-type ="Substance treatment"/>
+		<field header="Parameter Value[substance]" data-type="Ontology term" is-file-field="false" is-multiple-value="true" is-required="true" is-hidden="false" is-forced-ontology="false">
+			<description>
+				<![CDATA[The name of the substance tested.]]>
+			</description>
+			<default-value/>
+			<recommended-ontologies>
+				<ontology id="http://data.bioontology.org/ontologies/CHEBI" abbreviation="CHEBI" name="Chemical Entities of Biological Interest Ontology" version="80"/>
+			</recommended-ontologies>
+		</field>
+		<field header="Parameter Value[vehicle substance]" data-type="Ontology term" is-file-field="false" is-multiple-value="true" is-required="true" is-hidden="false" is-forced-ontology="false">
+			<description>
+				<![CDATA[The name of the vehicle compound used to deliver the toxicant.]]>
+			</description>
+			<default-value/>
+		</field>
+		<field header="Parameter Value[administration interval]" data-type="Double" is-file-field="false" is-multiple-value="true" is-required="false" is-hidden="false" is-forced-ontology="false">
+			<description>
+				<![CDATA[Amount of time between subsequent doses when multiple doses are administered over a period of time.]]>
+			</description>
+			<default-value>
+				<![CDATA[
+				
+			]]>
+			</default-value>
+		</field>
+		<unit-field data-type="String" is-multiple-value="false" is-required="false" is-forced-ontology="false">
+			<default-value/>
+			<description>Administration interval unit"</description>
+		</unit-field>
+		<field header="Parameter Value[administration route]" data-type="List" is-file-field="false" is-multiple-value="true" is-required="true" is-hidden="false" is-forced-ontology="false">
+			<description>
+				<![CDATA[The delivery mechanism for the toxicant tested.]]>
+			</description>
+			<default-value>
+				<![CDATA[
+				
+			]]>
+			</default-value>
+			<list-values>GAVAGE,INTRAPERITONEAL,RETRO-ORBITAL,TAIL VEIN INJECTION,DIET,WATER,DOUGH PILL</list-values>
+		</field>
+		<field header="Factor Value[dose]" data-type="Double" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
+			<description>
+				<![CDATA[Dose of the toxicant]]>
+			</description>
+			<default-value>
+				<![CDATA[
+				
+			]]>
+			</default-value>
+		</field>
+		<unit-field data-type="String" is-multiple-value="false" is-required="false" is-forced-ontology="true">
+			<default-value/>
+			<description>Dose unit"</description>
+		</unit-field>
+		<field header="Sample Name" data-type="String" is-file-field="false" is-multiple-value="false" is-required="true" is-hidden="false" is-forced-ontology="false">
+			<description>
+				<![CDATA[Samples represent major outputs resulting from a protocol application other than the special case outputs of Extract or a Labeled Extract.]]>
+			</description>
+			<default-value>
+				<![CDATA[
+				
+			]]>
+			</default-value>
+		</field>
+		<structured-field name="characteristics"/>
+		<structured-field name="factors"/>
+	</isatab-configuration>
+</isatab-config-file>

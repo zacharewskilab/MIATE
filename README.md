@@ -10,21 +10,28 @@ assist in the use and evaluation of MIATE to promote the <b>F</b>indable, <b>A</
 # Table of Contents
 * [Checklist](#Checklist)
 * [Templates](#Templates)
-	* [ISA](#desc)
-	* [CEDAR](#assays)
-	* [GEO](#assays)
-* [Examples](#getstarted)
-* [Tools](#populate)
-
+	* [ISA](#ISA)
+	* [CEDAR](#CEDAR)
+	* [GEO](#GEO0)
+* [Examples](#Examples)
+* [Tools](#Tools)
+	* [Comparison of reporting standards](#RScomparison)
+	* [Evaluation of GEO metadata](#GEOeval)
+	* [Integration of ISA configurations](#ISAmerge)
 <a name = "Checklist"/><h2>Checklist</h2>
 ==========================================
-
-
+The MIATE reporting standards is provided in pdf, tab-delimited, and MS Excel formats as reference.
 
 <a name = "Templates"/><h2>Templates</h2>
 ==========================================
+Here the MIATE reporting standard is implemented as templates for three commonly used resources for the collection of 
+(meta)data. For more information on these formats please see the [ISAcommons](https://www.isacommons.org/), [Center for
+Expanded Data Annotation and Retrieval](https://metadatacenter.org/), and [Gene Expression Omnibus](https://www.ncbi.nlm.nih.gov/geo/info/submission.html)
+
 <a name = "ISA"/><h3>Templates</h3>
+
 <a name = "CEDAR"/><h3>Templates</h3>
+
 <a name = "GEO"/><h3>Templates</h3>
 
 <a name = "Examples"/><h2>Examples</h2>
@@ -32,9 +39,11 @@ assist in the use and evaluation of MIATE to promote the <b>F</b>indable, <b>A</
 
 <a name = "Tools"/><h2>Tools</h2>
 ==========================================
+<a name = "RScomparison"/><h3>Comparison of reporting standards</h3>
+<a name = "GEOeval"/><h3>Evaluation of GEO metadata</h3>
+<a name = "ISAmerge"/><h3>Integration of ISA configurations</h3>
 
-
-
+<div id="divCheckbox" style="visibility: hidden">
 * [ISA-MIATE Background](#background)
 * [ISA-MIATE Data Model](#datamodel)
 * [Getting Started with ISA-MIATE](#getstarted)
@@ -170,3 +179,4 @@ For more definitions and details, [click here](https://isa-specs.readthedocs.io/
 * **Characteristic**: A list of material characteristics that may be qualitative or quantitative in description. Qualitative values MAY be Ontology Annotations, while quantitative values MAY be qualified with a Unit definition.
 
 * **Factor**: A factor corresponds to an independent variable manipulated by the experimentalist with the intention to affect biological systems in a way that can be measured by an assay. 
+</div>

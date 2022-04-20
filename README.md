@@ -24,9 +24,10 @@ issue and tell us your suggestions and/or comments. You can also [contact us](ma
 
 <a name = "Checklist"/><h2>Checklist</h2>
 ==========================================
-The MIATE reporting standards is provided in pdf, tab-delimited, and MS Excel formats as reference. The current version includes requirements for 
+The MIATE reporting standards is provided in [pdf](https://github.com/zacharewskilab/MIATE/raw/master/checklist/MIATE-Checklist.pdf), [tab-delimited](https://github.com/zacharewskilab/MIATE/blob/master/checklist/MIATE-Checklist.txt), and [MS Excel](https://github.com/zacharewskilab/MIATE/raw/master/checklist/MIATE-Checklist.xlsx) formats as reference. The current version includes requirements for 
 _in vivo_ animal experiments and includes early drafts for _in vitro_ and _ex vivo_ toxicological experiments which have not been formalized into
 templates. 
+
 
 <a name = "Templates"/><h2>Templates</h2>
 ==========================================

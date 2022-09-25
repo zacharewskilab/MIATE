@@ -59,8 +59,9 @@ Experiment Reporting Module (TERM)](https://pubmed.ncbi.nlm.nih.gov/34333066/) a
 ![RSVenn](imgs/TERMoverlapMIATE.png)
 
 <a name = "GEOeval"/><h3>Evaluation of GEO metadata</h3>
-A case study demonstrating the value of using a structured metadata collection tool is shown for exposure studies deposited in GEO. The code and documentation
-for reproducing published findings are included here.
+A case study demonstrating the value of using a structured metadata collection tool is shown for environmental health sciences data deposited in GEO. Detailed 
+methodology can be found [here](https://github.com/zacharewskilab/MIATE/tree/master/Tools/GEOQuery)
+![GEOQuery](imgs/GEOQuery/GEO_metadata_reporting_eval.png)
 
 <a name = "ISAmerge"/><h3>Integration of ISA configurations</h3>
 

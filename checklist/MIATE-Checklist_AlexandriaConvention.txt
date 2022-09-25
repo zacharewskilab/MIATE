@@ -1,0 +1,68 @@
+attribute	required	type	array	class	ontology	ontology_browser_url	ontology_root	controlled_list_entries	dependency	dependency_condition	dependent	example	attribute_description	SCP_equivalent				Datatype	Ontology source	has units (ontology)	Description
+metadata_template_url																					
+Study Design Type																		Ontology	EFO		
+biosample_id												L28				Organism	Characteristic	Ontology	NCBI Taxonomy		Provide taxonomic information associated to the source biological material. This should be included as an NCBI_TAXON ID unless not found within NCBI.
+organ		string		ontology	https://www.ebi.ac.uk/ols/api/ontologies/uberon	https://www.ebi.ac.uk/ols/ontologies/uberon	UBERON_0000465					UBERON_0002107				Strain	Characteristic	Ontology	Rat Strain Ontology (RS); EFO		Provide strain information associated to the source biological material.
+organ__ontology_label		string		ontology_label								liver									
+organism		string		ontology	https://www.ebi.ac.uk/ols/api/ontologies/ncbitaxon	https://www.ebi.ac.uk/ols/ontologies/ncbitaxon	NCBITaxon_2759					NCBITAXON_10090	The scientific binomial name for the species of the organism.	species		Organism supplier	Characteristic				Provide the name of the vendor for the organism
+organism__ontology_label		string		ontology_label					organism							Sex	Characteristic	Ontology	EFO		"Sex of the study organism. Must be one of the following: FEMALE, MALE"
+organism_supplier		string							organism			Charles Rivers Laboratories				Study start age	Parameter	Number		Y (EFO)	Age of the organism at the time the first dose was administered.
+strain		string		ontology										mouse_strain		Study end age	Parameter	Number		Y (EFO)	Age of the organism when the terminal sample was collected.
+strain__ontology_label		string		ontology_label					strain					mouse_strain__ontology_label		Average Vivarium Temperature	Parameter	Number		Y (EFO)	Average vivarium temperature during the study
+sex	Yes	string		enum				"[""male"", ""female"", ""mixed"", ""unknown""]"					Biological sex			Average Vivarium Humidity	Parameter	Number		Y (EFO)	Average vivarium humidity during the study
+organism_age		number									organism_age__unit	56	Age of the organism at time of sample collection.			Vivarium Light Cycle	Parameter	String			"Vivarium light cycle for the study period defined as light:dark formatted as number:number (e.g. 12:12, 03:21, ...)"
+organism_age__unit		string		ontology	https://www.ebi.ac.uk/ols/api/ontologies/uo	https://www.ebi.ac.uk/ols/ontologies/uo	UO_0000003		organism_age			UO_0000033	organism_age__unit			Cage Type	Parameter	String			Define the type of caging used for the study period
+organism_age__unit_label		string		unit_label					organism_age__unit			day	organism_age__unit_label			Bedding Type	Parameter	String			Define the type of bedding used for the study period
+acclimation_period		number									acclimation_period__unit	4				Water Type	Parameter	String			Define the water source for the study period
+acclimation_period__unit		string		ontology	https://www.ebi.ac.uk/ols/api/ontologies/uo	https://www.ebi.ac.uk/ols/ontologies/uo	UO_0000003		acclimation_period			UO_0000033				Feed Name	Factor	String			Descriptive name of the diet
+acclimation_period_unit_label		string		unit_label					acclimation_period__unit			day				Feed description	Parameter	String			"Description of feed including, but not limited to, macronutrient composition"
+study_start_age																Feed source	Parameter	String			Vendor of the feed tested if commercially available
+study_end_age																Substance	Characteristic	Ontology	CHEBI; FOODON		Identifier(s) of the toxic substance. For a list of substances in a mixture use a semi-colon (;) between identifier.
+age_unit																Vehicle Substance	Characteristic	Ontology	CHEBI		Name of the vehicle compound used to deliver the toxic substance or mixture.
+age_unit_ontology																Administration Interval	Parameter	Number		Y (EFO)	Amount of time between subsequent doses when multiple doses are administered over a period of time.
+average_vivarium_temperature																Number of Administrations	Parameter	Number			The number of doses administered when multiple doses are given over a period of time.
+temperature_unit																Administration Route	Parameter	String			"The delivery mechanism for the toxicant tested. Must be one of the following: GAVAGE,INTRAPERITONEAL,RETRO-ORBITAL,TAIL VEIN INJECTION,DIET,WATER,DOUGH PILL"
+temperature_unit_ontology																Administration volume	Parameter	Number		Y (EFO)	The volume in which the substance was administered
+average_vivarium_humidity																Dose	Factor	Number		Y (EFO)	Dose of the toxic substance
+humidity_unit																Chemical Source	Parameter	String			Vendor of the toxic substance tested if commercially available
+humidity_unit_ontology																Chemical Catalog Number	Parameter	String			Catalog number of the toxicant if commercially available.
+light_cycle																Chemical Purity	Parameter	String; Attachment			Chemical purity of the toxic substance. A sample information sheet from the vendor can be attached.
+cage_type																Time-point	Factor	Number		Y (EFO)	Terminal time-point.
+bedding																ad lib feeding	Parameter	Number			Yes or No 
+water																Euthanasia method	Parameter	String	NCIT		Method used for euthanasia.
+name																					
+feed_description																					
+feed_source																					
+feed_catalog_no																					
+ad_lib_feeding																					
+toxic_substance																					
+toxic_substance_ontology																					
+CAS_number																					
+SMILE_string																					
+Formula																					
+InChI_code																					
+toxic_substance_molecular_weight																					
+vendor																					
+catalog_number																					
+toxic_substance_purity																					
+toxic_substance_lot																					
+toxic_substance_storage																					
+vehicle_substance																					
+vehicle_substance_ontology																					
+administration_volume																					
+administration_volume_unit																					
+administration_volume_unit_ontology																					
+administration_interval																					
+administration_interval_unit																					
+administration_interval_unit_ontology																					
+administration_number																					
+administration_route																					
+administration_route_ontology																					
+dose																					
+dose_unit																					
+dose_unit_ontology																					
+time_point																					
+time_point_unit																					
+time_point_unit_ontology																					
+euthaniasia_method																					
+euthaniasia_method_ontology																					

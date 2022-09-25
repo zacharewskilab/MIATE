@@ -2,13 +2,15 @@
 
 The [Gene Expression Omnibus (GEO)](https://www.ncbi.nlm.nih.gov/geo/) was queried for experiments using a toxicology study design and adherence to reporting standards evaluated.
 
-1. Use [E-utilities](https://www.ncbi.nlm.nih.gov/books/NBK25497/) to identity datasets with keywords of interest
+1. Use [E-utilities](https://www.ncbi.nlm.nih.gov/books/NBK25497/) to identity datasets with keywords of interest. We used the following advanced search
+(Rattus Norvegicus[Organism] OR Mus musculus[Organism]) AND (dose-response OR toxicology OR dose) AND (gse[Etyp]) 
+- Rattus Norvegicus or Mus Musculus 
 ```console
 esearch -db gds -query '(Rattus Norvegicus[ORGANISM] OR Mus Musculus[ORGANISM])\
 	AND (dose-response OR toxicology OR exposure OR dose)\
 	AND (gse[ETYP])'\
 	| efetch -format 'docsum' -mode xml\
-	> geo.xml
+	> GEO.xml
 ```
 
 
@@ -32,7 +34,7 @@ done
 ```
 
 4. Filter to remove datasets not meeting certain criteria. 
-Here we manually filtered to exclude datasets  using _in vitro_ models and non-chemical stressors. A list for reproducibility is available in this repository. 
+We used a semi-automated filter to exclude datasets using _in vitro_ models and non-chemical stressors. A summary of datasets included and excluded is [here](curatedDatasets.txt) . 
 ```console
 mkdir filtered_seriesMatrix
 while read p
@@ -60,7 +62,7 @@ cut -f 3,4 GEO_CharacteristicExtracted5.txt | sort -k1 -k2 | uniq > unique_examp
 grep -v '^numi\|^ngene\|^nread\|^weight\|^od260\|^od280\|^percentmito\|^28s\|^animal_id\|^antibod\|^bun\|^bw\|^bioanalyzer\|^library\|^glucose\|^mouse.no\|^mouse_id\|^necrosis\|^Weight\|^sample number\|^scananimal\|^scan\|^sampleid\|^Sample id\|^sample ID\|^sampleID\|^rna\|^ratunique\|^ratio\|^rat id\|^Rat IDs\|^rat identifier\|^OD280\|^OD260\|^mouse number\|^mouse id\|^mouse.id\|^microarray\|^lab sample number\|^individual\|^sample id\|^sampleID' unique_examples.txt > unique_examples2.txt
 ```
 
-6. Map terms. For reproducibility a file with mapped terms is included in this repository. 
+6. Map terms. For reproducibility a file with mapped terms is included in this repository [here](TermsMapped.txt). 
 ```console
 head TermsMapped.txt
 ```

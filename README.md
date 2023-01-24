@@ -37,10 +37,11 @@ Templates have been generated for individual platforms in the aim to reduce the 
 
 <a name = "CEDAR"/><h3>CEDAR</h3>
 MIATE has been implemented as a [CEDAR template](https://openview.metadatacenter.org/templates/https:%2F%2Frepo.metadatacenter.org%2Ftemplates%2Fa1d0f86f-395f-4ad6-b320-09189329250f). To use the template:
-	1. Login to [CEDAR workbench](https://cedar.metadatacenter.org/)
-	2. Search in the "Shared with Everybody" tab for "MIATE-Investigation" 
-	3. Using the three points for more options choose "populate". This will make a copy in your own workspace.
-	4. populate the template and save.
+
+1. Login to [CEDAR workbench](https://cedar.metadatacenter.org/)
+2. Search in the "Shared with Everybody" tab for "MIATE-Investigation" 
+3. Using the three points for more options choose "populate". This will make a copy in your own workspace.
+4. populate the template and save.
   
 <a name = "GEO"/><h3>GEO</h3>
 For more information the Gene Expression Omnibus (GEO) [click here](https://www.ncbi.nlm.nih.gov/geo)

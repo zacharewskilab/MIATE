@@ -3,8 +3,8 @@
   Minimum Information about Animal Toxicology Experiments Resources
 </h1>
 
-The __M__inimum __I__nformation about __A__nimal __T__oxicology __E__xperiments (MIATE) is a suite of resources developed to 
-facilitate the standardized collection of _in vivo_ toxicology experimental data and promote the __F__indable, __A__ccessible, __I__teroperable, __R__eusable 
+The <b>M</b>inimum <b>I</b>nformation about <b>A</b>nimal <b>T</b>oxicology <b>E</b>xperiments (MIATE) is a suite of resources developed to 
+facilitate the standardized collection of _in vivo_ toxicology experimental data and promote the <b>F</b>indable, <b>A</b>ccessible, <b>I</b>nteroperable, <b>R</b>eusable 
 (FAIR) principles for _in vivo_ animal toxicology experiments.
 
 MIATE aims to be a community-driven set of minimal metadata requirements for animal toxicology experiments supported by a templates, protocols, and resources 

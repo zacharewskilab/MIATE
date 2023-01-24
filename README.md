@@ -3,48 +3,48 @@
   Minimum Information about Animal Toxicology Experiments Resources
 </h1>
 
-The Minimum Information about Animal Toxicology Experiments (MIATE) github resources is a suite of documents to 
-assist in the use and evaluation of MIATE to promote the <b>F</b>indable, <b>A</b>ccessible, <b>I</b>teroperable, <b>R</b>reusable 
+The __M__inimum __I__nformation about __A__nimal __T__oxicology __E__xperiments (MIATE) is a suite of resources developed to 
+facilitate the standardized collection of _in vivo_ toxicology experimental data and promote the __F__indable, __A__ccessible, __I__teroperable, __R__eusable 
 (FAIR) principles for _in vivo_ animal toxicology experiments.
 
-The aim of MIATE is to be a community developed set of minimal metadata requirements. Your feedback is welcome. Simply open a new 
+MIATE aims to be a community-driven set of minimal metadata requirements for animal toxicology experiments supported by a templates, protocols, and resources 
+to enable collection of research data in a standardized manner. Your feedback is welcome. Simply open a new 
 issue and tell us your suggestions and/or comments. You can also [contact us](mailto:zacharewski.lab@gmail.com)
 
 # Table of Contents
 * [MIATE Checklist](#Checklist)
-* [Templates](#Templates)
-	* [ISA](#ISA)
+* [Using MIATE](#Templates)
 	* [CEDAR](#CEDAR)
-	* [GEO](#GEO0)
+	* [GEO](#GEO)
+	* [ISA](#ISA)
 * [Examples](#Examples)
 * [Tools](#Tools)
 	* [Comparison of reporting standards](#RScomparison)
 	* [Evaluation of GEO metadata](#GEOeval)
 	* [Integration of ISA configurations](#ISAmerge)
 
-<a name = "Checklist"/><h2>Checklist</h2>
+<a name = "MIATE Checklist"/><h3>MIATE Checklist overview</h3>
 ==========================================
-The MIATE reporting standards is provided in [pdf](https://github.com/zacharewskilab/MIATE/raw/master/checklist/MIATE-Checklist.pdf), [tab-delimited](https://github.com/zacharewskilab/MIATE/blob/master/checklist/MIATE-Checklist.txt), and [MS Excel](https://github.com/zacharewskilab/MIATE/raw/master/checklist/MIATE-Checklist.xlsx) formats as reference. The current version includes requirements for 
-_in vivo_ animal experiments and includes early drafts for _in vitro_ and _ex vivo_ toxicological experiments which have not been formalized into
-templates. 
+The MIATE reporting standards can be viewed in [pdf](https://github.com/zacharewskilab/MIATE/raw/master/checklist/MIATE-Checklist.pdf), [tab-delimited](https://github.com/zacharewskilab/MIATE/blob/master/checklist/MIATE-Checklist.txt), 
+and [MS Excel](https://github.com/zacharewskilab/MIATE/raw/master/checklist/MIATE-Checklist.xlsx) formats. 
 
 
-<a name = "Templates"/><h2>Templates</h2>
+<a name = "Templates"/><h3>How to use MIATE</h3>
 ==========================================
-Here the MIATE reporting standard is implemented as templates for three commonly used resources for the collection of 
-(meta)data. For more information on these formats please see the [ISAcommons](https://www.isacommons.org/), [Center for
+The MIATE reporting standard leverages existing data collection tools from the [ISAcommons](https://www.isacommons.org/), [Center for
 Expanded Data Annotation and Retrieval](https://metadatacenter.org/), and [Gene Expression Omnibus](https://www.ncbi.nlm.nih.gov/geo/info/submission.html).
-
-<a name = "ISA"/><h3>Investigation, Study, Assay (ISA) Configurations</h3>
-The ISA framework was developed to standardize the collection, curation, management, and reuse of life science data. For more information about the ISA 
-Commons community of users [click here](https://www.isacommons.org/). The ISA framework is detailed [here](https://isa-specs.readthedocs.io/en/latest/). 
-For ISA related tools and resources visit their [Github](https://github.com/ISA-tools).
+Templates have been generated for individual platforms in the aim to reduce the barrier for researchers to collect data in accordance with these minimal requirements.
 
 <a name = "CEDAR"/><h3>CEDAR</h3>
 For more information about the Center for Expanded Data Annotation and Retrieval (CEDAR) [click here](https://metadatacenter.org/).
 
 <a name = "GEO"/><h3>GEO</h3>
 For more information the Gene Expression Omnibus (GEO) [click here](https://www.ncbi.nlm.nih.gov/geo)
+
+<a name = "ISA"/><h3>Investigation, Study, Assay (ISA) Configurations</h3>
+_Deprecated_: The ISA framework was developed to standardize the collection, curation, management, and reuse of life science data. While MIATE is developed based on the ISA framework 
+detailed [here](https://isa-specs.readthedocs.io/en/latest/), ISAcreator is no longer maintained [Github](https://github.com/ISA-tools).
+
 
 <a name = "Examples"/><h2>Examples</h2>
 ==========================================
@@ -54,7 +54,7 @@ consisted of a dose-response exposure to the aryl hydrocarbon receptor (AHR) ago
 <a name = "Tools"/><h2>Tools</h2>
 ==========================================
 <a name = "RScomparison"/><h3>Comparison of reporting standards</h3>
-An excel spreadsheet outlines the comparison of terms described in the [ToxBio Checklist](https://pubmed.ncbi.nlm.nih.gov/17442663/), the [OECD Toxicology
+An [excel spreadsheet](TERM_TBC_MIATE_Comparison_040622.xlsx) outlines the comparison of terms described in the [ToxBio Checklist](https://pubmed.ncbi.nlm.nih.gov/17442663/), the [OECD Toxicology
 Experiment Reporting Module (TERM)](https://pubmed.ncbi.nlm.nih.gov/34333066/) and MIATE. 
 ![RSVenn](imgs/TERMoverlapMIATE.png)
 

@@ -48,8 +48,8 @@ Diet exposure
 	Feed catalog number	Parameter	String			Catalog number of the feed if commercially available.			
 Substance exposure									
 	Substance Name	Factor	String			Descriptive name of the toxic substance or mixture			
-	Substance	Characteristic	Ontology	CHEBI; FOODON		Identifier(s) of the toxic substance. For a list of substances in a mixture use a semi-colon (;) between identifier.	X	X	X
-	Vehicle Substance	Characteristic	Ontology	CHEBI		Name of the vehicle compound used to deliver the toxic substance or mixture.	X	X	X
+	Substance	Characteristic	Ontology	CHEBI; DSSTox		Identifier(s) of the toxic substance. For a list of substances in a mixture use a semi-colon (;) between identifier.	X	X	X
+	Vehicle Substance	Characteristic	Ontology	CHEBI; DSSTox		Name of the vehicle compound used to deliver the toxic substance or mixture.	X	X	X
 	Administration Interval	Parameter	Number		Y (EFO)	Amount of time between subsequent doses when multiple doses are administered over a period of time.	X	X	X
 	Number of Administrations	Parameter	Number			The number of doses administered when multiple doses are given over a period of time.	X	X	X
 	Administration Route	Parameter	String			"The delivery mechanism for the toxicant tested. Must be one of the following: GAVAGE,INTRAPERITONEAL,RETRO-ORBITAL,TAIL VEIN INJECTION,DIET,WATER,DOUGH PILL"	X	X	X
